@@ -1,0 +1,1960 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billion Group Outlet Link</title>
+    <style>
+        body{padding: 10; margin: 0; font-family: Aptos; background: #003941ff; height: 200px; }
+        
+        footer{font-family: Verdana; position: fixed; bottom: 0; width: 8%; font-size: 12px; text-shadow: 1px 1px 2px black; text-align: center; padding: 1px; background-color: Salmon; color: SKYBlue; }
+        
+        .header_Main{font-family: Verdana; position: fixed; z-index: 2; top: 0; width: 99%; height: 140px; border-top: RIDGE; border-bottom: RIDGE; border-width: 9px; border-color: #71e100ff; border-radius: 2px; text-shadow: 1px 1px 15px black, 1px 1px 15px darkblue, 1px 1px 15px darkblue; background: SKYBlue; color: white; padding: 5px 15px; font-size: 55px; font-weight: bold; text-align: center; justify-content: center; align-content: center; cursor: default; }
+        .header_HQ{font-family: Verdana; scroll-margin-top: 170px; border-style: RIDGE; border-width: 4px; border-color: #71e100ff; border-radius: 5px; text-shadow: 1px 1px 2px black; background: #134ECdff; color: white; padding: 2px 2px; font-size: 18px; font-weight: bold; text-align: center; cursor: default; }
+        .header_General{font-family: Verdana; scroll-margin-top: 170px; border-style: RIDGE; border-width: 4px; border-color: #71e100ff; border-radius: 5px; text-shadow: 1px 1px 2px black; background: #134ECdff; color: white; padding: 2px 2px; font-size: 15px; font-weight: bold; text-align: center; cursor: default; }
+        .header_Region{font-family: Verdana; scroll-margin-top: 198px; border-style: RIDGE; border-width: 4px; border-color: #71e100ff; border-radius: 5px; text-shadow: 1px 1px 2px black; background: #4a37c4ff; color: white; padding: 2px 2px; font-size: 15px; font-weight: bold; text-align: center; cursor: default; }
+        .header_Monthly_Daily{font-family: Verdana; scroll-margin-top: 170px; border-style: RIDGE; border-width: 4px; border-color: #71e100ff; border-radius: 9px; text-shadow: 1px 1px 2px black; background: #6a5acd; color: white; padding: 2px 2px; font-size: 14px; font-weight: bold; text-align: center; cursor: default; }
+        .header_Emai_Sub{font-family: Verdana; scroll-margin-top: 170px; margin-right: 2px; width:95%; border-style: RIDGE; border-width: 1px; border-color: SKYBlue; border-radius: 0px; text-shadow: 1px 1px 2px white; background: SKYBlue; color: black; padding: 2px 3px; font-size: 12px; font-weight: none; text-align: center; cursor: default; }
+        
+        .header_Main img{position: absolute; left: 8px; }
+        img{border-style: RIDGE; border-width: 4px; border-color: #71e100ff; border-radius: 15px; width: 340px; box-shadow: 1px 1px 10px black, 1px 1px 10px darkblue, 1px 1px 10px darkblue;}
+        
+        .container{display: flex; margin-top: 170px; }
+        
+        .sidebar{font-family: Verdana; font-size: 12px; width: 8%; background: #053bb1ff; color: white; height: 100%; position: sticky; padding: 5px; top: 170px; text-align: center; overflow: auto; }
+        .sidebar a{display: block; padding: 8px 2px; color: #d1d5db; text-decoration: none; cursor: pointer; }
+        .sidebar a:hover{background: #194bb7ff; color: red; text-shadow: 1px 1px 1px rgba(255, 255, 255, 1); font-weight: bold; }
+        
+        .blankbg{font-family: Verdana; font-size: 14px; width: 10px; background: #003941ff; color: white; height: 100%; padding: 5px; top: 170px; text-align: center; overflow: auto; }
+        .background_select{font-family: Verdana; font-size: 13px; background: #5f4cdeff; color: white; }
+        
+        .main{flex: 1; padding: 0px; margin-top: 0px; }
+        
+        .grid5{display: grid; grid-template-columns: repeat(auto-fit,minmax(15px,1fr)); gap: 14px; padding: 3px; }
+        .grid3{display: grid; grid-template-columns: 750px minmax(4, 80px); gap: 7px; padding: 3px;}
+        .grid_Normal{display: grid; grid-template-columns: repeat(auto-fit,minmax(15px,1fr)); gap: 3px; padding: 2px; }
+        .grid_Regoin_EC{font-size: 15px; display: grid; grid-template-columns: 348px 140px 50px 20px 21px 75px 77px 20px 75px 20px repeat(auto-fit, minmax(80px, 1fr)) ; gap: 3px; padding: 2px; }
+        .grid_Regoin_EC_Cons{font-size: 15px; display: grid; grid-template-columns: 348px 140px 50px 20px 21px 77px 20px 75px 20px repeat(auto-fit, minmax(80px, 1fr)) ; gap: 3px; padding: 2px; }
+        .grid_Regoin{font-size: 15px; display: grid; grid-template-columns: 348px 140px 50px 20px 21px 75px repeat(auto-fit, minmax(80px, 1fr)) ; gap: 3px; padding: 2px;}
+        .grid_Regoin_Cons{font-size: 15px; display: grid; grid-template-columns: 348px 140px 50px 20px 21px repeat(auto-fit, minmax(80px, 1fr)) ; gap: 3px; padding: 2px;}
+        .grid_HQ{font-size: 15px; display: grid; grid-template-columns: 491px 50px 20px 21px repeat(auto-fit,minmax(10px,1fr)); gap: 3px; padding: 2px; }
+        .grid_HQ_Cons{font-size: 15px; display: grid; grid-template-columns: 491px 50px 20px 21px repeat(auto-fit,minmax(10px,1fr)); gap: 3px; padding: 2px; }
+        
+
+        .column_hide{display: none; }
+                
+        compcode{display: none; }
+        span:hover + compcode{display: contents; color:Orange; }
+        
+        .tooltip{position: relative; display: inline-block; cursor: pointer; }
+        .tooltiptext{visibility: hidden; font-size:12px; opacity: 0; transition: opacity 0.2s ease; width: 50px; background-color: #7afbf6ff; text-shadow: 1px 1px 1px rgba(116, 0, 0, 1); color: Orange; font-weight:bold; text-align: center; border-radius: 6px; padding: 4px; position: absolute; z-index: 1; bottom: 140%; left: 50%; transform: translateX(-50%); }
+        .tooltip:hover .tooltiptext{visibility: visible; opacity: 1; }
+        .tooltiptext::after{content: ""; font-size:12px; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); border-style: solid; border-width: 0.5px; border-color: #134ECdff; border-style: solid; border-color: black transparent transparent transparent; }        
+        
+        .card_Small{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: SKYBlue; text-shadow: 1px 1px 1px #cefed8ff; border-radius: 5px; padding: 2px; box-shadow: 0 3px 3px rgba(252, 255, 255, 1); transition: .3s; text-align: center; color: black; font-weight: normal; cursor: pointer; }
+        .card_Small:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; }
+        .card_HQ1{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: SKYBlue; border-radius: 4px; padding: 2px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); color:black; font-weight: normal; text-shadow: 1px 1px 1px #87fe9eff; cursor: default; }
+        .card_HQ{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: SKYBlue; border-radius: 4px; padding: 2px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); text-align: center; color:black; font-weight: normal; text-shadow: 1px 1px 1px #87fe9eff; cursor: pointer; align-content: center;}
+        .card_HQ:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; }
+        .card_HQ_Send_Mail{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: DodgerBlue; border-radius: 4px; padding: 2px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); text-align: center; color:white; font-weight: normal; text-shadow: 1px 1px 1px #87fe9eff; cursor: pointer; align-content: center;}
+        .card_HQ_Send_Mail:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; }
+        .card_CT1{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #fba580ff; border-radius:4px; padding: 2px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); text-align: center; color: black; font-weight: normal; text-shadow: 1px 1px 1px #87fe9eff; cursor: default; align-content: center;}
+        .card_CT{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #fba580ff; text-shadow: 1px 1px 1px #cefed8ff; border-radius: 5px; padding: 2px; box-shadow:0 3px 3px rgba(252, 255, 255, 1); transition:.3s; text-align: center; color: black; font-weight: normal; cursor: pointer; align-content: center;}
+        .card_CT:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; align-content: center;}
+        .card_ST1{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #f0f990ff; border-radius:4px; padding: 2px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); text-align: center; color: black; font-weight: normal; text-shadow: 1px 1px 1px #87fe9eff; cursor: default; align-content: center;}
+        .card_ST{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #f0f990ff; text-shadow: 1px 1px 1px #cefed8ff; border-radius: 5px; padding: 2px; box-shadow:0 3px 3px rgba(252, 255, 255, 1); transition: .3s; text-align: center; color: black; font-weight: normal; cursor: pointer; align-content: center;}
+        .card_ST:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; align-content: center;}
+        .card_EC1{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #94f968ff; border-radius:4px; padding: 2px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); text-align: center; color: black; font-weight: normal; text-shadow: 1px 1px 1px #87fe9eff; cursor: default; align-content: center;}
+        .card_EC2{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #94f968ff; border-radius:4px; padding: 2px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); text-align: center; color: black; font-weight: normal; text-shadow: 1px 1px 1px #87fe9eff; cursor: default; align-content: center; width:80px;}
+        .card_EC{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #94f968ff; text-shadow: 1px 1px 1px #cefed8ff; border-radius: 5px; padding: 2px; box-shadow:0 3px 3px rgba(252, 255, 255, 1); transition: .3s; text-align: center; color: black; font-weight: normal; cursor: pointer; align-content: center;}
+        .card_EC:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; align-content: center;}
+        .card_Reg_Email{margin-bottom: 2px; border-style: solid; border-width: 0px; border-color: #134ECdff; background: #4a37c4ff; text-shadow: 1px 1px 1px #cefed8ff; border-radius: 3px; padding: 1px; box-shadow:0 3px 3px rgba(252, 255, 255, 1); transition: .3s; text-align: center; color: yellow; font-weight: normal; cursor: pointer; align-content: center;}
+        .card_Reg_Email:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; align-content: center;}
+        .card_PR1{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #c398ffff; border-radius:4px; padding: 2px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); text-align: center; color: black; font-weight: normal; text-shadow: 1px 1px 1px #87fe9eff; cursor: default; align-content: center;}
+        .card_PR{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #c398ffff; text-shadow: 1px 1px 1px #cefed8ff; border-radius: 5px; padding: 2px; box-shadow:0 3px 3px rgba(252, 255, 255, 1); transition: .3s; text-align: center; color: black; font-weight: normal; cursor: pointer; align-content: center;}
+        .card_PR:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; align-content: center;}
+        .card_NT1{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #ef86f0ff; border-radius:4px; padding: 2px; box-shadow: 1px 1px 1px rgba(255, 255, 255, 1); text-align: center; color: black; font-weight: normal; text-shadow: 1px 1px 1px #87fe9eff; cursor: default; align-content: center;}
+        .card_NT{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #ef86f0ff; text-shadow: 1px 1px 1px #cefed8ff; border-radius: 5px; padding: 2px; box-shadow:0 3px 3px rgba(252, 255, 255, 1); transition: .3s; text-align: center; color: black; font-weight: normal; cursor: pointer; align-content: center;}
+        .card_NT:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; align-content: center;}
+        .card_Out_S{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #134ECdff; background: #e3abf7ff; border-radius: 5px ; padding: 4px; text-shadow: 1px 1px 1px #cefed8ff; box-shadow:0 3px 3px rgba(255, 255, 255, 1); transition: .3s; text-align: center; color: black; font-weight: normal; cursor: pointer; }
+        .card_Out_S:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; }
+        .card_Gen{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #4169E1; background: #40E0D0; text-shadow: 1px 1px 1px #cefed8ff; border-radius: 5px; padding: 2px; box-shadow: 0 3px 3px rgba(252, 255, 255, 1); transition: .3s; text-align: center; color: black; font-weight: normal; cursor: pointer; align-content: center; }
+        .card_Gen:hover{transform: translateY(-2px); color: white; text-shadow: 1px 1px 1px rgba(177, 0, 0, 1); font-weight: bold; background: #02a623ff; }
+        .card_Hide{margin-bottom: 2px; border-style: solid; border-width: 0.5px; border-color: #003941ff; background: #003941ff; border-radius: 5px ; padding: 4px; text-shadow: 1px 1px 1px #003941ff; box-shadow:0 3px 3px #003941ff; transition: .3s; text-align: center; color: #003941ff; font-weight: normal; cursor: default; }
+        
+        .invisible-placeholder{visibility: hidden !important; background: transparent !important; border-color: transparent !important; box-shadow: none !important; color: transparent !important; text-shadow: none !important; cursor: default; pointer-events: none; }
+        
+        #NewSub_CT::placeholder, #NewSub_ST::placeholder, #NewSub_EC::placeholder, #NewSub_PR::placeholder, #NewSub_NT::placeholder, #New_Supp::placeholder,
+        #NewSub_EC_Cons::placeholder, #NewSub_PR_Cons::placeholder, #NewSub_NT_Cons::placeholder{color: white; }
+        
+        p {text-align:right; font-size:11px;  margin:5px;}
+        .center{display:flex; justify-content: center; align-items: center;}
+        .row{display: flex; justify-content: center; align-items: center; gap: 10px; }
+        .hidden{display: none; }
+
+    </style>
+</head>
+
+<body>
+    
+<div class="header_Main"><img src="https://fv9-6.failiem.lv/thumb_show.php?i=a2re7mb5n&view" >Billion Group Outlet Link
+    <!--
+    <button style="float:right" class="card_Small" onclick="BCHQ_WebRM()">BCHQ</button>
+    <button style="float:right" class="card_Small" onclick="BPHQ_WebRM()">BPHQ</button><br>
+    -->
+    <div class="row"> 
+        <p class="column_hide" style="display:none; font-size:20px; color:red;" id="processText">Run Process Product Type</p>
+        <p style="color:yellow; font-size:20px;" id="TodayDate"></p>
+        <p style="color:yellow; font-size:20px;" id="TimeNow" ></p>
+    </div>
+    <div style="float:right;">
+        <a class="header_Emai_Sub center">Email Subject :
+        <select class="background_select" style="border-style: solid; border-width: 3px; border-color:Orange;" id="MainSub" > 
+            <option value="">Select Email Subject......</option>
+            <option value="Monthly Closing Report">Monthly Closing Report</option>
+            <option value="Perishable Sales, GP, Disposal & Variance Stock">Perishable Sales, GP, Disposal & Variance Stock</option>
+            <option value="Sales & GP By Line">Sales & GP By Line</option>
+            <option value="Monthly Inventory Report">Monthly Inventory Report</option>
+            <option value="Monthly Oversea Inventory Report">Monthly Oversea Inventory Report</option>
+            <option value="Stock Count">Stock Count </option>
+            <option value="Non Moving">Non Moving</option>
+            <option value="MyKasih Daily Summary">MyKasih Daily Summary</option>
+            <option value="MyKasih Monthly Summary">MyKasih Monthly Summary</option>
+        </select>
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <a href="#">Main</a>
+        <a href="#Year2026">2026</a>
+        <a href="#General">General</a>
+        <a href="#OutSource">Out Source</a>
+        <a href="#HQ">Headquater</a>
+        <a href="#Central">Central Region</a>
+        <a href="#Southern">Southern Region</a>
+        <a href="#EastCoast">EastCoast Region</a>
+        <a href="#EastCoastConstore">EastCoast Region Constore</a>
+        <a href="#Perak">Perak Region</a>
+        <a href="#PerakConstore">Perak Region Constore</a>
+        <a href="#Northern">Northern Region</a>
+        <a href="#NorthernConstore">Northern Region Constore</a>
+        <button style="float:center" class="card_Small" onclick="BPHQ_WebRM()">BPHQ</button>
+        <button style="float:center" class="card_Small" onclick="BCHQ_WebRM()">BCHQ</button>
+        
+    </div>
+
+    <div class="main">
+        <!-- Year 2026 -->
+        <div class="grid_Normal">
+            <div class="header_Region" id="Year2026">Year 2026</div>
+        </div>
+        <div class="grid_Normal">
+            <div class="header_Monthly_Daily" >Billion Group Daily Report</div>
+            <div class="header_Monthly_Daily" >Billion Group Monthly Closing</div>
+        </div>
+        <div class="grid_Normal">
+            <div class="card_Gen" onclick="Group_DailySales2026()">Daily Sales</div>
+            <div class="card_Gen" onclick="Group_MonthlySales2026()">Monthly Sales</div>
+        </div>
+        <div class="grid_Normal">
+            <div class="card_Gen" onclick="Group_MyKasih2026()">Daily MyKasih</div>
+            <div class="card_Gen" onclick="Group_MonthlyStock2026()">Monthly Stock Balance</div>
+        </div>
+        <div class="grid_Normal">
+            <div class="header_Monthly_Daily" >Billion Group Monthly Record</div>
+        </div>
+        <div class="grid_Normal">
+            <div class="card_Gen" onclick="SalesReportUpload()">Sales Report Upload</div>
+            <div class="card_Gen" onclick="MisPos2026()">Mis/Pos Thermal/Label/Form</div>
+            <div class="card_Gen" onclick="PaidTape2026()">Cashier Paid Tape</div>
+        </div>
+        <div class="grid_Normal">
+            <div class="card_Gen" onclick="TNGCard2026()">Touch & Go Card</div>
+            <div class="card_Gen" onclick="PackagingMateria2026()">Packing Materia</div>
+            <div class="card_Gen" onclick="NewSupplierRecord()">New Supplier Record</div>
+        </div>
+        
+        <!-- General -->
+        <div class="header_General" id="General">Billion Group General Info</div>
+        <div class="grid_Normal" id="generalButtonsGrid">
+            <div class="card_Out_S" onclick="OutletInfo()">Outlet General Info</div>
+            <div class="card_Out_S" onclick="AnydeskId()">Outlet Anydesk ID</div>
+            <div class="card_Out_S" onclick="ComputerHardware2026()">Outlet Computer Hardware</div>
+        </div>
+
+        <!-- Out Source -->
+        <div class="header_General" id="OutSource">Billion Group Out Source</div>
+        <div class="grid_Normal" id="outsourceGrid">
+            <div class="card_Out_S" onclick="CRM_Portal()">Gross Synergy Report</div>
+            <div class="card_Out_S" onclick="B2B_Portal()">Billion EVP(B2B) Portal</div>
+            <div class="card_Out_S" onclick="ESL_Portal()">Esl / E-TAG Portal</div>
+        </div>
+        <div class="header_General" id="OutSource">Kementerian Perdagangan Dalam NegerI (KPDN)</div>
+        <div class="grid_Normal" id="outsourceGrid">
+            <div class="card_Out_S" onclick="IEMSBiz()">KPDN IEMS_Biz</div>
+            <div class="card_Out_S" onclick="Ecoss()">KPDN eCOSS</div>
+            <div class="card_Out_S" onclick="PJRM()">KPDN Program Jualan Rahmah</div>
+            <div class="card_Out_S" onclick="MOT()">KPDN Sistem Notis Jualan Murah</div>
+        </div>
+
+        <!-- HQ -->
+        <div class="header_HQ" id="HQ">Billion Group Headquater Server </div>
+        <div>
+            <div class="grid_Regoin-row grid_HQ"><div class="card_HQ1" style="text-align:left" onclick="toggleRow(this)">HQ Server</div><div class="card_HQ1 source" style="text-align:center;">BPHQ</div><div class="card_HQ1" style="text-align:center;">00</div><div class="card_HQ1" style="text-align:center;">01</div><div class="card_HQ" onclick="BPHQ_WebRM()">WebRM</div><div class="card_HQ" onclick="BPHQ_CSV()"><div class="tooltip">CSV Tools<div class="tooltiptext">BPHQ</div></div></div></div>
+            <div class="grid_Regoin-row grid_HQ"><div class="card_HQ1" style="text-align:left" onclick="toggleRow(this)">HQ Constore Server</div><div class="card_HQ1 source" style="text-align:center;">BCHQ</div><div class="card_HQ1" style="text-align:center;">00</div><div class="card_HQ1" style="text-align:center;">02</div><div class="card_HQ" onclick="BCHQ_WebRM()">WebRM</div><div class="card_HQ" onclick="BCHQ_CSV()"><div class="tooltip">CSV Tools<div class="tooltiptext">BCHQ</div></div></div></div>
+            <div class="grid_Regoin-row grid_HQ" id="btieRow"><div class="card_HQ1" style="text-align:left" onclick="toggleRow(this)">Billion Trading Import & Export Sdn. Bhd.</div><div class="card_HQ1" style="text-align:center;">BTIE</div><div class="card_HQ1" style="text-align:center;">00</div><div class="card_HQ1" style="text-align:center;">03</div><div class="card_HQ" id="btieWebRM" onclick="BTIE_WebRM()">WebRM</div><div class="card_HQ" id="btieCSV" onclick="BTIE_CSV()"><div class="tooltip">CSV Tools<div class="tooltiptext">BITE</div></div></div></div>
+        </div>
+        <div>
+            <div style="display:flex; gap:7px; font-size:15px;">
+                <input type="text" id="New_Supp" style="width:585px; background:DodgerBlue; color:white;" placeholder="Enter New Supplier Full Name ">
+                    <div class="card_HQ1" style="width:80px; text-align:left"><input type="checkbox" value="Canfood" id="chkCanfood"> Canfood </div>
+                    <div class="card_HQ1" style="width:80px; text-align:left"><input type="checkbox" value="Sundries" id="chkSundries"> Sundries </div>
+                    <div class="card_HQ1" style="width:80px; text-align:left"><input type="checkbox" value="Frozen" id="chkFrozen"> Frozen </div>
+                    <div class="card_HQ1" style="width:80px; text-align:left"><input type="checkbox" value="Softline" id="chkSoftline"> Softline </div>
+                    <div class="card_HQ1" style="width:80px; text-align:left"><input type="checkbox" value="Hardline" id="chkHardline"> Hardline </div>
+                    <div class="card_HQ_Send_Mail" style="width:210px;" onclick="Send_Email_New_Supp('New_Supp')"> Email New Supplier to Account </div>
+            </div>
+        </div>
+            
+        
+        <!-- Central Region -->
+        <div class="header_Region" id="Central">Central Region <div style="display:flex; gap:7px; float:right; font-size:11px;"><input type="text" id="NewSub_CT" maxlength="40" style="width:250px; background:#4a37c4ff; color:white;" placeholder="Enter email subject..."><div class="card_Reg_Email" onclick="Send_Email_Region('CT_Outlet')">Email to All Central Outlet</div></div></div>
+        <div id="regionContainer_CT"></div>
+
+        <!-- Southern Region -->
+        <div class="header_Region" id="Southern">Southern Region <div style="display:flex; gap:7px; float:right; font-size:11px;"><input type="text" id="NewSub_ST" maxlength="40" style="width:250px; background:#4a37c4ff; color:white;" placeholder="Enter email subject..."><div class="card_Reg_Email" onclick="Send_Email_Region('ST_Outlet')">Email to All Southern Outlet</div></div></div>
+        <div id="regionContainer_ST"></div>
+
+        <!-- EastCoast Region -->
+        <div class="header_Region" id="EastCoast"><div class="tooltip">EastCoast Region 
+            <span class="tooltiptext" style="width:230px; font-size:11px;">Click Outlet Code To Show More</span>
+            </div>
+            <button type="button" style="float:left; font-size:11px;" onclick="resetAllCheckboxes_EC()">Reset Check Box</button>
+            <div style="display:flex; gap:7px; float:right; font-size:11px;"><input type="text" id="NewSub_EC" maxlength="40" style="width:250px; background:#4a37c4ff; color:white;" placeholder="Enter email subject..."><div class="card_Reg_Email" onclick="Send_Email_Region('EC_Outlet')">Email to All EastCoast Outlet</div></div></div>
+        <div id="regionContainer_EC"></div>
+
+        <!-- EastCoast Constore -->
+        <div class="header_Region" id="EastCoastConstore">EastCoast Region Constore 
+            <button type="button" style="float:left; font-size:11px;" onclick="resetAllCheckboxes_EC_Cons()">Reset Check Box</button>
+            <div style="display:flex; gap:7px; float:right; font-size:11px;"><input type="text" id="NewSub_EC_Cons" maxlength="40" style="width:250px; background:#4a37c4ff; color:white;" placeholder="Enter email subject..."><div class="card_Reg_Email" onclick="Send_Email_Region('EC_Cons')">Email to All EastCoast Constore</div></div></div>
+        <div class="grid_Regoin-row grid_HQ_Cons"><div class="card_HQ1" style="text-align:left" onclick="toggleRow(this)">HQ Constore Server</div><div class="card_HQ1 source" style="text-align:center;">BCHQ</div><div class="card_HQ1" style="text-align:center;">00</div><div class="card_HQ1" style="text-align:center;">02</div><div class="card_HQ" onclick="BCHQ_WebRM()">WebRM</div><div class="card_HQ" onclick="BCHQ_CSV()"><div class="tooltip">CSV Tools<div class="tooltiptext">BCHQ</div></div></div></div>
+        <div id="regionContainer_EC_Cons"></div>
+
+        <!-- Perak Region -->
+        <div class="header_Region" id="Perak">Perak Region <div style="display:flex; gap:7px; float:right; font-size:11px;"><input type="text" id="NewSub_PR" maxlength="40" style="width:250px; background:#4a37c4ff; color:white;" placeholder="Enter email subject..."><div class="card_Reg_Email" onclick="Send_Email_Region('PR_Outlet')">Email to All Perak Outlet</div></div></div>
+        <div id="regionContainer_PR"></div>
+
+        <!-- Perak Constore -->
+        <div class="header_Region" id="PerakConstore">Perak Region Constore <div style="display:flex; gap:7px; float:right; font-size:11px;"><input type="text" id="NewSub_PR_Cons" maxlength="40" style="width:250px; background:#4a37c4ff; color:white;" placeholder="Enter email subject..."><div class="card_Reg_Email" onclick="Send_Email_Region('PR_Cons')">Email to All Perak Constore</div></div></div>
+        <div class="grid_Regoin-row grid_HQ_Cons"><div class="card_HQ1" style="text-align:left" onclick="toggleRow(this)">HQ Constore Server</div><div class="card_HQ1 source" style="text-align:center;">BCHQ</div><div class="card_HQ1" style="text-align:center;">00</div><div class="card_HQ1" style="text-align:center;">02</div><div class="card_HQ" onclick="BCHQ_WebRM()">WebRM</div><div class="card_HQ" onclick="BCHQ_CSV()"><div class="tooltip">CSV Tools<div class="tooltiptext">BCHQ</div></div></div></div>
+        <div id="regionContainer_PR_Cons"></div>
+
+        <!-- Northern Region -->
+        <div class="header_Region" id="Northern">Northern Region <div style="display:flex; gap:7px; float:right; font-size:11px;"><input type="text" id="NewSub_NT" maxlength="40" style="width:250px; background:#4a37c4ff; color:white;" placeholder="Enter email subject..."><div class="card_Reg_Email" onclick="Send_Email_Region('NT_Outlet')">Email to All Northern Outlet</div></div></div>
+        <div id="regionContainer_NT"></div>
+
+        <!-- Northern Constore -->
+        <div class="header_Region" id="NorthernConstore">Northern Region Constore <div style="display:flex; gap:7px; float:right; font-size:11px;"><input type="text" id="NewSub_NT_Cons" maxlength="40" style="width:250px; background:#4a37c4ff; color:white;" placeholder="Enter email subject..."><div class="card_Reg_Email" onclick="Send_Email_Region('NT_Cons')">Email to All Northern Constore</div></div></div>
+        <div class="grid_Regoin-row grid_HQ_Cons"><div class="card_HQ1" style="text-align:left" onclick="toggleRow(this)">HQ Constore Server</div><div class="card_HQ1 source" style="text-align:center;">BCHQ</div><div class="card_HQ1" style="text-align:center;">00</div><div class="card_HQ1" style="text-align:center;">02</div><div class="card_HQ" onclick="BCHQ_WebRM()">WebRM</div><div class="card_HQ" onclick="BCHQ_CSV()"><div class="tooltip">CSV Tools<div class="tooltiptext">BCHQ</div></div></div></div>
+        <div id="regionContainer_NT_Cons"></div>
+
+    </div>
+
+    <footer>
+        <a>Author: Simson </a>
+        <a style="color:red;" id="countdown">00:00:00</a>
+    </footer>
+</div>
+
+<script>
+    // 所有原始函数定义 (保持完整)
+    //HQ Sever Link
+    function BPHQ_WebRM(){window.open("http://billionsmhq.dyndns.org:88")}
+    function BPHQ_CSV(){window.open("http://billionsmhq.dyndns.org:88/tools/exportcsv/")}
+    function BCHQ_WebRM(){window.open("http://billionsmhq.dyndns.org:888")}
+    function BCHQ_CSV(){window.open("http://billionsmhq.dyndns.org:888/tools/exportcsv/")}
+    function BTIE_WebRM(){window.open("")}  // 空链接
+    function BTIE_CSV(){window.open("")}  // 空链接
+    
+    //Out Source Link
+    function B2B_Portal(){window.open("https://billion.evp.my/")}
+    function CRM_Portal(){window.open("https://crmonline.inno2e.com/crm_login.php")}
+    function ESL_Portal(){window.open("https://esl.zkong.com/")}
+    function IEMSBiz(){window.open("https://iemsbiz.kpdn.gov.my/")}
+    function Ecoss(){window.open("https://ecoss.kpdn.gov.my/admin/")}
+    function PJRM(){window.open("https://pjrm.kpdn.gov.my/")}
+    function MOT(){window.open("https://njm.kpdn.gov.my/")}
+
+    //General Link
+    function AnydeskId(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/EajfYL8U4gZLmRyV9YYMzMgBGtJfhSSl5YZwzTQRSa-JTA?e=4%3AhkujJz&at=9")}
+    function OutletInfo(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/Ef6EBFaXYgVDo3wjc6twWnIBeGwuWWYoxCqbVBxxu3NdDg?e=okHhcD")}
+
+SalesReportUpload
+    function SalesReportUpload(){window.open("https://bmcsb-my.sharepoint.com/personal/master_bmcsb_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmaster%5Fbmcsb%5Fonmicrosoft%5Fcom%2FDocuments%2FBillion%2FSales%2F2026%2FOutlet%20Sales%20Report%20%28Chop%26Sign%29&ga=1")}
+    function MisPos2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Balance%20Stock%20of%20MIS%20%26%20POS.xlsx?d=w327e8a5e27d84297aaa7714a2c240319&e=4%3adac78b3a7ae14ee98c2306979fe2e16b&sharingv2=true&fromShare=true&at=9")}
+    function PaidTape2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B041DA2BC-294B-4597-93AF-45BC69FBC96E%7D&file=Group%20Finance%20-%20Billion%20Paid%20Tape%202026.xlsx&fromShare=true&action=default&mobileredirect=true")}
+    function TNGCard2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B33C2DCBB-66F9-4B2C-BE46-11B27E029F65%7D&file=Group%20Order%20TNG%20Card%20&%20RFID%20-%202026.xlsx=&fromShare=true&action=default&mobileredirect=true")}
+    function PackagingMateria2026(){window.open("https://bmcsb-my.sharepoint.com/personal/master_bmcsb_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmaster%5Fbmcsb%5Fonmicrosoft%5Fcom%2FDocuments%2FBillion%2FMIS%2FAdmin%2F2026%2FPackaging%20Material&viewid=4c18cc49%2D5acd%2D450e%2Dae98%2D266979901d30&view=0")}    
+    function NewSupplierRecord(){window.open("https://bmcsb-my.sharepoint.com/personal/master_bmcsb_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmaster%5Fbmcsb%5Fonmicrosoft%5Fcom%2FDocuments%2FBillion%2FMIS%2FAccount%2FNew%20Supplier&ga=1")} 
+    function ComputerHardware2026(){window.open("")}  // 空链接
+
+    //Outlet Links
+    //WebRM
+    function BLPR_WebRM(){window.open("http://billionpr.dyndns.org:6932/")}
+    function BJGR_WebRM(){window.open("http://billiongr.dyndns.org:6932/")}
+    function BLHM_WebRM(){window.open("http://billionhm.dyndns.org:6932/")}
+    function BLSM_WebRM(){window.open("http://billionsrimanjung.dyndns.org:6932/")}
+    function BLSI_WebRM(){window.open("http://billioniskandar.dyndns.org:6932/")}
+    function BMJP_WebRM(){window.open("http://billionbmjp.dyndns.org:6932/")}
+    function BLCH_WebRM(){window.open("http://blch.dyndns.org:6932/")}
+    function BLPB_WebRM(){window.open("http://billionpb.dyndns.org:6932/")}
+    function BLKP_WebRM(){window.open("http://billionkp2.dyndns.org:6932/")}
+    function BLSP_WebRM(){window.open("http://billionsp.dyndns.org:6932/")}
+    function BLBW_WebRM(){window.open("http://billionbw.dyndns.org:6932/")}
+    function BLAS_WebRM(){window.open("http://billionas.dyndns.org:6932/")}
+    function BLSJ_WebRM(){window.open("http://billionsj.dyndns.org:6932/")}
+    function BLLK_WebRM(){window.open("http://billionlk.dyndns.org:6932/")}
+    function BLBL_WebRM(){window.open("http://billionbl.dyndns.org:6932/")}
+    function BLKB_WebRM(){window.open("http://billionpintupong.dyndns.org:6932/")}
+    function BLKM_WebRM(){window.open("http://billionkb.dyndns.org:6932/")}
+    function BLTM_WebRM(){window.open("http://billiontanahmerah.dyndns.org:6932/")}
+    function BLRP_WebRM(){window.open("http://billionrp.dyndns.org:6932/")}
+    function BLGN_WebRM(){window.open("http://billiongn.dyndns.org:6932/")}
+    function BLHP_WebRM(){window.open("http://billionhp.dyndns.org:6932/")}
+    function BLPM_WebRM(){window.open("http://billionpm.dyndns.org:6932/")}
+    function BLTC_WebRM(){window.open("http://billiontanjungchat.dyndns.org:6932/")}
+    function BLKK_WebRM(){window.open("http://billionkk.dyndns.org:6932/")}
+    function BLJT_WebRM(){window.open("http://billionjt.dyndns.org:6932/")}
+    function BLBS_WebRM(){window.open("http://billionbesut.dyndns.org:6932/")}
+    function BLPP_WebRM(){window.open("http://billionpp.dyndns.org:6932/")}
+    function BLBC_WebRM(){window.open("http://billionbc.dyndns.org:6932/")}
+    function PTPM_WebRM(){window.open("http://billionptpm.dyndns.org:6932/")}
+    function BLBG_WebRM(){window.open("http://billionbb.dyndns.org:6932/")}
+    function BLTP_WebRM(){window.open("http://billiontp.dyndns.org:6932/")}
+    function BLRB_WebRM(){window.open("http://billionraub.dyndns.org:6932/")}
+    function PTJW_WebRM(){window.open("http://ptjelawat.dyndns.org:6932/")}
+    function PTMC_WebRM(){window.open("http://billionptmc.dyndns.org:6932/")}
+    function PKKP_WebRM(){window.open("http://billionpkkp.dyndns.org:6932/")}
+    function BLPD_WebRM(){window.open("http://billionpd2.dyndns.org:6932/")}
+    function BLSG_WebRM(){window.open("http://billionsegamat.dyndns.org:6932/")}
+    function BLBH_WebRM(){window.open("http://billionbahau2.dyndns.org:6932/")}
+    function BLYY_WebRM(){window.open("http://billionyayasan.dyndns.org:6932/")}
+    function BLBB_WebRM(){window.open("http://billionbangi.dyndns.org:6932/")}
+    function BSMY_WebRM(){window.open("http://billionsmy.dyndns.org:6932/")}
+    function BLPK_WebRM(){window.open("http://billionpk.dyndns.org:6932/")}
+    function BACC_WebRM(){window.open("http://bacc2.dyndns.org:6932/")}
+
+    //CSV
+    function BLPR_CSV(){window.open("http://billionpr.dyndns.org:6932/tools/exportcsv")}
+    function BJGR_CSV(){window.open("http://billiongr.dyndns.org:6932/tools/exportcsv")}
+    function BLHM_CSV(){window.open("http://billionhm.dyndns.org:6932/tools/exportcsv")}
+    function BLSM_CSV(){window.open("http://billionsrimanjung.dyndns.org:6932/tools/exportcsv")}
+    function BLSI_CSV(){window.open("http://billioniskandar.dyndns.org:6932/tools/exportcsv")}
+    function BMJP_CSV(){window.open("http://billionbmjp.dyndns.org:6932/tools/exportcsv")}
+    function BLCH_CSV(){window.open("http://blch.dyndns.org:6932/tools/exportcsv")}
+    function BLPB_CSV(){window.open("http://billionpb.dyndns.org:6932/tools/exportcsv")}
+    function BLKP_CSV(){window.open("http://billionkp2.dyndns.org:6932/tools/exportcsv")}
+    function BLSP_CSV(){window.open("http://billionsp.dyndns.org:6932/tools/exportcsv")}
+    function BLBW_CSV(){window.open("http://billionbw.dyndns.org:6932/tools/exportcsv")}
+    function BLAS_CSV(){window.open("http://billionas.dyndns.org:6932/tools/exportcsv")}
+    function BLSJ_CSV(){window.open("http://billionsj.dyndns.org:6932/tools/exportcsv")}
+    function BLLK_CSV(){window.open("http://billionlk.dyndns.org:6932/tools/exportcsv")}
+    function BLBL_CSV(){window.open("http://billionbl.dyndns.org:6932/tools/exportcsv")}
+    function BLKB_CSV(){window.open("http://billionpintupong.dyndns.org:6932/tools/exportcsv")}
+    function BLKM_CSV(){window.open("http://billionkb.dyndns.org:6932/tools/exportcsv")}
+    function BLTM_CSV(){window.open("http://billiontanahmerah.dyndns.org:6932/tools/exportcsv")}
+    function BLRP_CSV(){window.open("http://billionrp.dyndns.org:6932/tools/exportcsv")}
+    function BLGN_CSV(){window.open("http://billiongn.dyndns.org:6932/tools/exportcsv")}
+    function BLHP_CSV(){window.open("http://billionhp.dyndns.org:6932/tools/exportcsv")}
+    function BLPM_CSV(){window.open("http://billionpm.dyndns.org:6932/tools/exportcsv")}
+    function BLTC_CSV(){window.open("http://billiontanjungchat.dyndns.org:6932/tools/exportcsv")}
+    function BLKK_CSV(){window.open("http://billionkk.dyndns.org:6932/tools/exportcsv")}
+    function BLJT_CSV(){window.open("http://billionjt.dyndns.org:6932/tools/exportcsv")}
+    function BLBS_CSV(){window.open("http://billionbesut.dyndns.org:6932/tools/exportcsv")}
+    function BLPP_CSV(){window.open("http://billionpp.dyndns.org:6932/tools/exportcsv")}
+    function BLBC_CSV(){window.open("http://billionbc.dyndns.org:6932/tools/exportcsv")}
+    function PTPM_CSV(){window.open("http://billionptpm.dyndns.org:6932/tools/exportcsv")}
+    function BLBG_CSV(){window.open("http://billionbb.dyndns.org:6932/tools/exportcsv")}
+    function BLTP_CSV(){window.open("http://billiontp.dyndns.org:6932/tools/exportcsv")}
+    function BLRB_CSV(){window.open("http://billionraub.dyndns.org:6932/tools/exportcsv")}
+    function PTJW_CSV(){window.open("http://ptjelawat.dyndns.org:6932/tools/exportcsv")}
+    function PTMC_CSV(){window.open("http://billionptmc.dyndns.org:6932/tools/exportcsv")}
+    function PKKP_CSV(){window.open("http://billionpkkp.dyndns.org:6932/tools/exportcsv")}
+    function BLPD_CSV(){window.open("http://billionpd2.dyndns.org:6932/tools/exportcsv")}
+    function BLSG_CSV(){window.open("http://billionsegamat.dyndns.org:6932/tools/exportcsv")}
+    function BLBH_CSV(){window.open("http://billionbahau2.dyndns.org:6932/tools/exportcsv")}
+    function BLYY_CSV(){window.open("http://billionyayasan.dyndns.org:6932/tools/exportcsv")}
+    function BLBB_CSV(){window.open("http://billionbangi.dyndns.org:6932/tools/exportcsv")}
+    function BSMY_CSV(){window.open("http://billionsmy.dyndns.org:6932/tools/exportcsv")}
+    function BLPK_CSV(){window.open("http://billionpk.dyndns.org:6932/tools/exportcsv")}
+    function BACC_CSV(){window.open("http://bacc2.dyndns.org:6932/tools/exportcsv")}
+
+    //Daily Sales 2026
+    function BLKB_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20BLKB_.xlsx?d=w23e9bac3d88e4416866ae5c509115912&e=4%3a7e953b5e846142d3b3c98c0d80f3b1d2&web=1&openShare=true&fromShare=true&at=9"); }
+    function BLKM_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B4129AA6F-385E-4DF0-B6F6-F4F839BD1A72%7D&file=Daily%20Sales%20-%20BLKM_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BLTM_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B96923878-6153-4BC3-AD2B-B1ABDA4218EB%7D&file=Daily%20Sales%20-%20BLTM_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BLRP_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B26DA96C3-E11F-43C2-A514-6C4BD99676D4%7D&file=Daily%20Sales%20-%20BLRP_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BLGN_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20BLGN_.xlsx?d=we0fa26ec5b8b4d2ba4a8ad24cdb88f14&e=4%3a7fc4b3f0e624477fbd20b7e7a182604f&sharingv2=true&fromShare=true&at=9"); }
+    function BLHP_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B892040D2-D8A9-4023-8029-ED00DB6C08B4%7D&file=Daily%20Sales%20-%20BLHP_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BLPM_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7BD5F6C3A0-30EA-4F47-A334-A0F3DF41F725%7D&file=Daily%20Sales%20-%20BLPM_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BLTC_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7BD421FF0C-AF49-4921-AE9C-BAC6450019F8%7D&file=Daily%20Sales%20-%20BLTC_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BLKK_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/guestaccess.aspx?email=mis.kualakrai%40billiongroup.com.my&e=dmOfnE&share=IQCyfpSQSCQLTIhDDn7H8CItAUZCGn_J3_5p_4CrZ399_IY"); }
+    function BLJT_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQDGDY8orwMDRYRIs8l22Oy9AWsdYn2HJTaGKtcpDy9OFWE?email=mis.jerteh%40billiongroup.com.my&e=Qi65ro"); }
+    function BLBS_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7BDB0E107E-B7BC-4B85-B8AF-E86E4FB061E0%7D&file=Daily%20Sales%20-%20BLBS_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BLPP_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20BLPP_.xlsx?d=w402f0e8ecb594aabb4fd821664f43221&e=4%3a88a397f1318f432cbe9f0cb06d9658f8&sharingv2=true&fromShare=true&at=9"); }
+    function BLBC_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20BLBC_.xlsx?d=w416605afb7a34d65bceec6f401694dd0&e=4%3a77270257f69743268a931c171074f312&sharingv2=true&fromShare=true&at=9"); }
+    function PTPM_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/guestaccess.aspx?email=mis.lubokjong%40billiongroup.com.my&e=63aAnZ&share=IQAOI6rFZUlLTrxZEgSwUeneAffwG81SgsOy2ugClAEwdKQ"); }
+    function BLBG_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B8EE4BB56-8A6F-43E8-BA65-CDCA6D3BF6FF%7D&file=Daily%20Sales%20-%20BLBG_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BLTP_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20BLTP_.xlsx?d=w4da46f04740a427f9409ac0c889bbf29&e=4%3a6a98440d30234436b8f1c23f9da64246&sharingv2=true&fromShare=true&at=9"); }
+    function PTJW_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20PTJW_.xlsx?d=wba17f835a0854b6381a2976064c3fb03&e=4%3a2782e350251a4bafb8c9db49ae2b4de0&sharingv2=true&fromShare=true&at=9"); }
+    function PTMC_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20PTMC_.xlsx?d=wc884c786f82e46aa9b313d1f52b797f5&e=4%3abed59ddb65c74893b0dc2dadd31a1cdc&sharingv2=true&fromShare=true&at=9"); }
+    function PKKP_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20PKKP_.xlsx?d=w9a2d824fa28145a496789d40262d15ba&e=4%3ab125dc64212146068d4eadd823be79db&sharingv2=true&fromShare=true&at=9"); }
+    function BCKB_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20BCKB_.xlsx?d=w45d48ad6fddf41c5b83017ee36e81533&e=4%3a7efe7cbd791f47669c85f43ebe34590e&sharingv2=true&fromShare=true&at=9"); }
+    function BCUM_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20BCUM_.xlsx?d=wb919c5521fc540a78e93f362367f34d6&e=4%3ae1cabe79fa5b41398bf19a507f0dc40b&sharingv2=true&fromShare=true&at=9"); }
+    function BCAK_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B3CA1EACE-6DAC-4483-97EF-7F5A9D436353%7D&file=Daily%20Sales%20-%20BCAK_.xlsx&action=default&mobileredirect=true"); }
+    function BCDB_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/doc2.aspx?sourcedoc=%7B41C388E7-FEBC-449E-BC3D-76896B188B9E%7D&file=Daily%20Sales%20-%20BCDB_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BCBC_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales/Daily%20Sales%20-%20BCBC_.xlsx?d=wffee8f8f99fb472f846c61edadcf700f&e=4%3ae97dfe233202423cb706d3138ae5499c&sharingv2=true&fromShare=true&at=9"); }
+    function BCPM_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7BB4414FD3-55EF-418F-92C7-D5839FE30ED0%7D&file=Daily%20Sales%20-%20BCPM_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BCPG_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B454E9987-ADA7-484D-95EA-A2037DAE572D%7D&file=Daily%20Sales%20-%20BCPG_.xlsx&fromShare=true&action=default&mobileredirect=true"); }
+    function BCGN_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/guestaccess.aspx?email=BCGN_%40billiongroup.com.my&e=Fq9LXi&share=IQBAvTVsS3RcRJpg3QiArrGXAXYz0k0HmFSZjzNkAyHK8XI"); }
+    function BCSJ_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQAXUVLzLgFiQYPeTOgId_Z1Aec9tdrYfD0Tn71IuiHJYLk?email=BCSJ_%40billiongroup.com.my&e=9uXg3J"); }
+    function BCPC_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B1F30044D-CE97-49B3-81D0-8416B0FD18A5%7D&file=Daily%20Sales%20-%20BCPC_.xlsx&action=default&mobileredirect=true"); }
+    function PKTB_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/guestaccess.aspx?email=PKTB_%40billiongroup.com.my&e=ZXDvRB&share=IQAxZv6yRGKeTZH2h-6ctKN0AfeqQzo2b8DEaWaHiwc5dgA"); }
+    function BCKT_DailySales2026(){window.open(""); }
+
+    //MyKasih 2026
+    function BLKB_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLKB_.xlsx?d=w236b1d56fd3645b6bed7540be12bca81&e=4%3a6786a1c8eda1467fb2e4467a63d2808a&sharingv2=true&fromShare=true&at=9"); }
+    function BLKM_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLKM_.xlsx?d=w12704a7ef5a04a86b3876f9c137f8710&e=4%3aec97b43ba26747e4903e1faec218f475&sharingv2=true&fromShare=true&at=9"); }
+    function BLTM_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLTM_.xlsx?d=w94ade3d11eba45f897867bc57c8e3286&e=4%3af8022d7165fb42c8afc768c9cb903_EC_7&sharingv2=true&fromShare=true&at=9"); }
+    function BLRP_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLRP_.xlsx?d=w3a74c6cf61d045e2b09653b1d83a8c1d&e=4%3aebcb5500b59a4917935e659bb36e4926&sharingv2=true&fromShare=true&at=9"); }
+    function BLGN_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLGN_.xlsx?d=wd153d29f974b4160b0faff9f9b84c092&e=4%3a6d42f38dcf2d4ab88b979e3e28b2d0ca&sharingv2=true&fromShare=true&at=9"); }
+    function BLHP_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQBSRiZj5XFFT4yrUV2LQ-SGAVJs3_bnL6e9Fwn-ko_KXFk"); }
+    function BLPM_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLPM_.xlsx?d=w3f814815687d4b6180b6c8cada5c7ba8&e=4%3a124442f8c009498bb7b8e8dd4fb98880&sharingv2=true&fromShare=true&at=9"); }
+    function BLTC_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLTC_.xlsx?d=w2d726a5c460643d8bc3ae09ad5e179a2&e=4%3a3d3d44f893874d4cbc9d5ad1cee2bb5f&sharingv2=true&fromShare=true&at=9"); }
+    function BLKK_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLKK_.xlsx?d=w7dc0526deab34a04a1648dd90f18d467&e=4%3a38453a5c5e484b5b8d715523c1da2c4f&sharingv2=true&fromShare=true&at=9"); }
+    function BLJT_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLJT_.xlsx?d=wbc3903745f4a49c2b47619b5fbd6d99c&e=4%3a32128351469b46c0915a40221d1b1282&sharingv2=true&fromShare=true&at=9"); }
+    function BLBS_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLBS_.xlsx?d=wb299964a0b524e20ba504f7d21bb4b48&e=4%3a52957ef5042f4f9dba15aeaca358f91d&sharingv2=true&fromShare=true&at=9"); }
+    function BLPP_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLPP_.xlsx?d=w89e502b20a474020bf89b44c27f93172&e=4%3a8ef731ebac3d42fabf1_EC_ce73c40d381&sharingv2=true&fromShare=true&at=9"); }
+    function BLBC_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLBC_.xlsx?d=wf67edf4c7acd428f89adda252b86fd77&e=4%3a90a10cb3eb854c568cd0eefa1f6c70d4&sharingv2=true&fromShare=true&at=9"); }
+    function PTPM_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20PTPM_.xlsx?d=we8f250a64c7e4b46b347529dc63871a1&e=4%3a85bc457224954b70aa59ea1f94656f87&sharingv2=true&fromShare=true&at=9"); }
+    function BLBG_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLBG_.xlsx?d=wc0c60f3a1a104e4b829c3f0850a768b3&e=4%3a2bce68e352044aa0a9b8169e67c24e68&sharingv2=true&fromShare=true&at=9"); }
+    function BLTP_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BLTP_.xlsx?d=wf190e26b43834be7a0b5b761b2d1c122&e=4%3a8ba691f474ca4d88896c00c5a0f0b13b&sharingv2=true&fromShare=true&at=9"); }
+    function PTJW_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20PTJW_.xlsx?d=wd228062a2afb4dfdb61c701eb2201532&e=4%3a84213c6a132546f1b9647429e8d3f094&sharingv2=true&fromShare=true&at=9"); }
+    function PTMC_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20PTMC_.xlsx?d=w5dbaa56cf61b4a9d9a2fafa8120545b6&e=4%3aec4d248500f4441b8f79c7de8040fbe2&sharingv2=true&fromShare=true&at=9"); }
+    function PKKP_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20PKKP_.xlsx?d=w27a8398c239744e09f3e2b25abac3894&e=4%3a66a5c9b4edf1420a953aa4e9d99f2685&sharingv2=true&fromShare=true&at=9"); }
+    function BCKB_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQAR-7Y8E-IUT6Dg7kLU8MK0AZ2ttAyUUFq-6y-lMAwDi5I"); }
+    function BCUM_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQBf0wQ9mB9mSLy_eiBX7uEJAbxH8HdmnVR68-klMkd94jo?email=BCUM_%40billiongroup.com.my&e=Ip0CAa"); }
+    function BCAK_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQBOrg1NCv2mT47tLK4RCi1pARcRvAmVOYSxAgs08A6Swu4?email=BCAK_%40billiongroup.com.my&e=LJ6Lgv"); }  
+    function BCDB_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQCgw7_5RM5bT7AQdRDnMiisAfAsbhRj-J-47i1MUdGWc-A"); }
+    function BCBC_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQANH8jtD_3xSaT9HCqijdr2AUPGsVN3WqvPa1D8usEgPiU"); }
+    function BCPM_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQA5zFCSxyEZQaeG9ELA6dj2AVFr-0uTTIApRBUP_34t7ak?email=BCPM_%40billiongroup.com.my&e=I0bkvx"); }
+    function BCPG_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BCPG_.xlsx?d=w3ebe3bcbf52145dd803b247435f3c263&e=4%3a1195e64105f64011a37f95fcd824f488&sharingv2=true&fromShare=true&at=9"); }
+    function BCGN_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20BCGN_.xlsx?d=w7c342207317b46faa08417167cc6bc7a&e=4%3a15d846ec6ce24f93b2d9471550898d3e&sharingv2=true&fromShare=true&at=9"); }
+    function BCSJ_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQDu3sGehaHiQoPj1n-6Lb9oAf8GctkFrPwb7va0gYhS6BE?email=BCSJ_%40billiongroup.com.my&e=J8TBPF"); }
+    function BCPC_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQCtN5RBM5jqQIMtKAn1Q4TFAQOi-7-_SJ7kxNexh7Kl6XE?email=BCPC_%40billiongroup.com.my&e=dQp2jF"); }
+    function PKTB_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/Sales/2026/Daily%20Sales%20-%20MyKasih/MyKasih%20Daily%20Sales%20-%20PKTB_.xlsx?d=w9d68cce436cc48b89d5dd133aa601b6b&e=4%3a003c55fb5c01477c81a0bb074f4b70ad&sharingv2=true&fromShare=true&at=9"); }
+    function BCKT_MyKasih2026(){window.open(""); }
+    
+    //Packaging Materia 2026
+    function BLKB_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLKB%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w0dff3445de794fecbc287d16198b3396&csf=1&web=1&e=wZa3ng"); }
+    function BLKM_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLKM%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w5054da93618549fa97c495a056fd50d5&csf=1&web=1&e=tKSdal"); }
+    function BLTM_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLTM%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w15f354677a2e41579816df4c93931c81&csf=1&web=1&e=sFBOYz"); }
+    function BLRP_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLTM%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w15f354677a2e41579816df4c93931c81&csf=1&web=1&e=sFBOYz"); }
+    function BLGN_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLGN%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=we985864b8b2040f6b15efa5d416bc33c&csf=1&web=1&e=P4TUDe"); }
+    function BLHP_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLHP%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w97e99b6ea464425db68d27d0f5ca0b61&csf=1&web=1&e=U8oCNV"); }
+    function BLPM_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLPM%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w449bc2944a844d1687c420e5b5ba682d&csf=1&web=1&e=GP04zc"); }
+    function BLTC_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLTC%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=weef8b5d99b584580afc13df05ab3ebc7&csf=1&web=1&e=BModEo"); }
+    function BLKK_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLKK%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=wf3cb3953f35b4c85a2a7117f7763430e&csf=1&web=1&e=UlLGoM"); }
+    function BLJT_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLJT%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w1073a4ddb0654ad6ac9a3243ee538619&csf=1&web=1&e=NprIZw"); }
+    function BLBS_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLBS%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w75c633dd9886433b87704282445d33da&csf=1&web=1&e=jdfXQD"); }
+    function BLPP_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLPP%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w70bb94fe375948c4a8c07af59c893f8c&csf=1&web=1&e=RCZeGi"); }
+    function BLBC_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLBC%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w85f81a53ada44cc9b43ccc31b612f71a&csf=1&web=1&e=zqpOYB"); }
+    function PTPM_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/PTPM%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w8c0b7c295a44415498f57b256054e918&csf=1&web=1&e=mV85AI"); }
+    function BLBG_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLBG%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=wb5f3af0f2cd44e78b8a0d85ea2cc38b5&csf=1&web=1&e=GgUegK"); }
+    function BLTP_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BLTP%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w4702c0a8051e4637b247791725ae19a1&csf=1&web=1&e=kCe6cw"); }
+    function PTJW_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/PTJW%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w709ec66654f14c06bfd0ab2864a589f4&csf=1&web=1&e=egXsYy"); }
+    function PTMC_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/PTMC%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w0575a7bcaa8949b6aff5bb6b7df5d37f&csf=1&web=1&e=7pA8dk"); }
+    function PKKP_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/PKKP%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=wcc76e11d53e243d492e4a133c0704cb1&csf=1&web=1&e=4nkxpi"); }
+    function BCKB_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/PTJW%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w709ec66654f14c06bfd0ab2864a589f4&csf=1&web=1&e=egXsYy"); }
+    function BCUM_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BCUM%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w0282fec2a4774049bd6af0c541c6d877&csf=1&web=1&e=7L3a3b"); }
+    function BCAK_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BCAK%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w25ad1b4fba8d4426a6204ca79deca941&csf=1&web=1&e=R2M4hA"); }
+    function BCDB_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BCDB%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w649c46adbfe1415598ceda4d4184930b&csf=1&web=1&e=2D42Q1"); }
+    function BCBC_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BCBC%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w9b6d367ba3094fb39b05ee567663eb28&csf=1&web=1&e=utZRWK"); }
+    function BCPM_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BCPM%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=wc46e697c57fe48eda3b65739856523db&csf=1&web=1&e=gTiuIL"); }
+    function BCPG_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BCPG%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w7ddd567ea0fd4569ad63824668008fc0&csf=1&web=1&e=3S5pY5"); }
+    function BCGN_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BCGN%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w5e082086f06246779d9420983fdee1a4&csf=1&web=1&e=8k4yOa"); }
+    function BCSJ_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BCSJ%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=w882e1795f7f5490aa4daf8c0a49c44e1&csf=1&web=1&e=ewhpRo"); }
+    function BCPC_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/BCPC%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=wba825f31aa1f450d8f20f779a7b2a673&csf=1&web=1&e=QCFeUI"); }
+    function PKTB_Packaging_Materia2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/Documents/Billion/MIS/Admin/2026/Packaging%20Material/PKTB%20%23%20Frozen%20-%20Packing%20Material.xlsx?d=wa86e0d78fb84479c89fa2a7f2ee35679&csf=1&web=1&e=Tp2dU0"); }
+    function BCKT_Packaging_Materia2026(){window.open(""); }
+
+    //Monthly Sales and Stock Balance 2026
+    function Group_MonthlySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7B3A20F749-A813-4DAB-8B5F-F40D16A55D24%7D&file=Monthly%20Total%20Sales%202026.xlsx&fromShare=true&action=default&mobileredirect=true")}
+    function Group_MonthlyStock2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/r/personal/master_bmcsb_onmicrosoft_com/_layouts/15/Doc.aspx?sourcedoc=%7BCD540554-1F57-4718-94F7-3DE6FC77C142%7D&file=Monthly%20Stock%20Balance%202026.xlsx&fromShare=true&action=default&mobileredirect=true")}
+    
+    //Daily Sales and Mykasih 2026
+    function Group_DailySales2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQASdYV4UpKsTqSq8-ORZH6hAWU5C_Y0tpuysFCS8rNUeqs?e=tdhHky")}
+    function Group_MyKasih2026(){window.open("https://bmcsb-my.sharepoint.com/:x:/g/personal/master_bmcsb_onmicrosoft_com/IQB1jGkbyyJ0Tagcyq-FEq8RARZzH-O1pdtVEEFF7Ab1Ta8")}
+    
+    //POS Image Upload
+	function BLKM_Pos(){window.open("http://billionkb.dyndns.org:6932/tools/imgUpload/")}
+	function PTJW_Pos(){window.open("http://ptjelawat.dyndns.org:6932/tools/imgUpload/")}
+	function PTMC_Pos(){window.open("http://billionptmc.dyndns.org:6932/tools/imgUpload/")}	
+	function PKKP_Pos(){window.open("http://billionpkkp.dyndns.org:6932/tools/imgUpload/")}
+
+	//Price Checker Image Upload
+    function BLKB_PChecker(){window.open("http://billionpintupong.dyndns.org:6932/tools/dspckUpload/")}
+	function BLKM_PChecker(){window.open("http://billionkb.dyndns.org:6932/tools/dspckUpload/")}
+	function BLTM_PChecker(){window.open("http://billiontanahmerah.dyndns.org:6932/tools/dspckUpload/")}
+	function BLKK_PChecker(){window.open("http://billionkk.dyndns.org:6932/tools/dspckUpload/")}
+	function PTJW_PChecker(){window.open("http://ptjelawat.dyndns.org:6932/tools/dspckUpload/")}
+	function PTMC_PChecker(){window.open("http://billionptmc.dyndns.org:6932/tools/dspckUpload/")}
+	function PKKP_PChecker(){window.open("http://billionpkkp.dyndns.org:6932/tools/dspckUpload/")}
+
+    //SCO Image Upload
+    function BLKM_Sco(){window.open("http://billionkb.dyndns.org:6932/tools/scoMediaUploader/")}	
+	function PTMC_Sco(){window.open("http://billionptmc.dyndns.org:6932/tools/scoMediaUploader/")}	
+    function PKKP_Sco(){window.open("http://billionpkkp.dyndns.org:6932/tools/scoMediaUploader/")}	
+
+    // 以下为门店数据、映射表、邮箱数据（保持原始定义完整）
+    //Outlet Name, Area, CompCode
+    const outlets_EC = [    
+       {name:"Pantai Timor Shopping Centre Sdn. Bhd.", area:"Pintu Pong", code:"BLKB", col1:"03", col2:"01" }, 
+       {name:"Billion Shopping Centre (Kota Bharu) Sdn. Bhd.", area:"Kota Sri Mutiara", code:"BLKM", col1:"03", col2:"02" }, 
+       {name:"Pantai Timor Shopping Centre (Tanah Merah) Sdn. Bhd.", area:"Tanah Merah", code:"BLTM", col1:"03", col2:"03" }, 
+       {name:"Pantai Timor Shopping Centre (Rantau) Sdn. Bhd.", area:"Rantau Panjang", code:"BLRP", col1:"03", col2:"04" }, 
+       {name:"Pasaraya Pantai Timor (Bachok) Sdn. Bhd.", area:"Gunong Timor", code:"BLGN", col1:"03", col2:"05" }, 
+       {name:"Pantai Timor Hypermarket Sdn. Bhd.", area:"Pengkalan Chepa", code:"BLHP", col1:"03", col2:"06" }, 
+       {name:"Pasaraya Pantai Timor (Pasir Mas) Sdn. Bhd.", area:"Pasir Mas", code:"BLPM", col1:"03", col2:"07" }, 
+       {name:"Billion Mart (Tanjung Chat) Sdn. Bhd.", area:"Tanjung Chat", code:"BLTC", col1:"03", col2:"08" }, 
+       {name:"Pasaraya Pantai Timor (Pasir Mas) Sdn. Bhd.", area:"Kuala Krai", code:"BLKK", col1:"03", col2:"09" }, 
+       {name:"Pantai Timor Shopping Centre Sdn. Bhd.", area:"Jerteh", code:"BLJT", col1:"03", col2:"10" }, 
+       {name:"Pasaraya Pantai Timor (Pasir Mas) Sdn. Bhd.", area:"Kuala Besut", code:"BLBS", col1:"03", col2:"11" }, 
+       {name:"Pasaraya Pantai Timor (Pasir Puteh) Sdn. Bhd.", area:"Pasir Puteh", code:"BLPP", col1:"03", col2:"12" }, 
+       {name:"Billion Mart (Tanjung Chat) Sdn. Bhd.", area:"Bachok", code:"BLBC", col1:"03", col2:"13" }, 
+       {name:"Pantai Timor Mart Sdn. Bhd.", area:"Lubok Jong", code:"PTPM", col1:"03", col2:"14" }, 
+       {name:"Kumpulan Pasaraya Pantai Timor Sdn. Bhd.", area:"Bukit Bunga", code:"BLBG", col1:"03", col2:"15" }, 
+       {name:"Kumpulan Pasaraya Pantai Timor Sdn. Bhd.", area:"Tumpat", code:"BLTP", col1:"03", col2:"16" }, 
+       {name:"Pasaraya Pantai Timor (PT) Sdn. Bhd.", area:"Jelawat", code:"PTJW", col1:"03", col2:"17" }, 
+       {name:"Pasaraya Pantai Timor (PT) Sdn. Bhd.", area:"Machang", code:"PTMC", col1:"03", col2:"18" }, 
+       {name:"Pasaraya Kito (PT) SDN. BHD.", area:"Pahi", code:"PKKP", col1:"03", col2:"19" } 
+        ];
+    const outlets_EC_Cons = [  
+       {name:"Pantai Timor Mart Sdn. Bhd. - Mini Mart", area:"Kota Bharu", code:"BCKB", col1:"03", col2:"01" }, 
+       {name:"Pantai Timor Mart Sdn. Bhd. - Mini Mart", area:"Uda Murni", code:"BCUM", col1:"03", col2:"02" }, 
+       {name:"Pantai Timor Mart Sdn. Bhd. - Mini Mart", area:"Abdul Kadir", code:"BCAK", col1:"03", col2:"03" }, 
+       {name:"Pantai Timor Mart Sdn. Bhd. - Mini Mart", area:"PCB", code:"BCDB", col1:"03", col2:"04" }, 
+       {name:"Pantai Timor Mart Sdn. Bhd. - Mini Mart", area:"Kampong Badak", code:"BCBC", col1:"03", col2:"05" }, 
+       {name:"Pantai Timor Mart Sdn. Bhd. - Mini Mart", area:"Pasir Mas Salor", code:"BCPM", col1:"03", col2:"06" }, 
+       {name:"Pantai Timor Mart Sdn. Bhd. - Mini Mart", area:"Pintu Gang", code:"BCPG", col1:"03", col2:"07" }, 
+       {name:"Pantai Timor Mart Sdn. Bhd. - Mini Mart", area:"Gual Nering", code:"BCGN", col1:"03", col2:"08" }, 
+       {name:"Pantai Timor Mart Sdn. Bhd. - Mini Mart", area:"Semat Jal", code:"BCSJ", col1:"03", col2:"09" }, 
+       {name:"Kedai Runcit Kito Sdn. Bhd. - Mini Mart", area:"Pangkal Chuit", code:"BCPC", col1:"03", col2:"10" }, 
+       {name:"Pasaraya Kita (PT) Sdn. Bhd. - Mini Mart", area:"Tok Bali", code:"PKTB", col1:"03", col2:"11" }, 
+//     {name:"Kedai Runcit Kito Sdn. Bhd. - Mini Mart", area:"Kampung Tapang", code:"BCKT", col1:"03", col2:"12" }, 
+        ];
+    const outlets_CT = [ 
+       {name:"Billion Shopping Centre (B.B.Bangi) Sdn. Bhd.", area:"Bangi", code:"BLBB", col1:"01", col2:"01" }, 
+       {name:"Billion Shopping Centre (Semenyih) Sdn. Bhd.", area:"Semenyih", code:"BSMY", col1:"01", col2:"02" }, 
+       {name:"Billion Shopping Centre (Port Klang) Sdn. Bhd.", area:"Port Klang", code:"BLPK", col1:"01", col2:"03" }, 
+       {name:"Kumpulan Pasaraya Pantai Timor Sdn. Bhd.", area:"Raub", code:"BLRB", col1:"01", col2:"04" }, 
+       {name:"Impian Shopping Centre Sdn. Bhd.", area:"Bangi Avenue", code:"BACC", col1:"01", col2:"05" } 
+        ];
+    const outlets_ST = [ 
+       {name:"Billion Shopping Centre (Port Dickson) Sdn. Bhd.", area:"Port Dickson", code:"BLPD", col1:"02", col2:"01" }, 
+       {name:"Billion Shopping Centre (Segamat) Sdn. Bhd.", area:"Segamat", code:"BLSG", col1:"02", col2:"02" }, 
+       {name:"Billion Shopping Centre (Klang) Sdn. Bhd.", area:"Bahau", code:"BLBH", col1:"02", col2:"03" }, 
+       {name:"Billion Shopping Centre (Segamat) Sdn. Bhd.", area:"Taman Yayasan", code:"BLYY", col1:"02", col2:"04" } 
+        ];
+    const outlets_PR = [ 
+       {name:"Billion Shopping Centre (Pantai Remis) Sdn. Bhd.", area:"Pantai Remis", code:"BLPR", col1:"04", col2:"01" }, 
+       {name:"Billion Shopping Centre (Jelapang) Sdn. Bhd.", area:"Gunung Rapat", code:"BJGR", col1:"04", col2:"02" }, 
+       {name:"Billion Shopping Centre (Shah Alam) Sdn. Bhd.", area:"Hutan Melintang", code:"BLHM", col1:"04", col2:"03" }, 
+       {name:"Billion Shopping Centre (Sri Manjung) Sdn. Bhd.", area:"Lumut", code:"BLSM", col1:"04", col2:"04" }, 
+       {name:"Billion Shopping Centre (Teluk Intan) Sdn. Bhd.", area:"Seri Iskandar", code:"BLSI", col1:"04", col2:"05" }, 
+       {name:"Billion Mart (Jelapang) Sdn. Bhd.", area:"Jelapang", code:"BMJP", col1:"04", col2:"06" }, 
+       {name:"Billion Shopping Centre (Jelapang) Sdn. Bhd.", area:"Cameron Highlands", code:"BLCH", col1:"04", col2:"07" } 
+        ];
+    const outlets_NT = [ 
+       {name:"Billion Shopping Centre (P.B.) Sdn. Bhd.", area:"Parit Buntar", code:"BLPB", col1:"05", col2:"01" }, 
+       {name:"Billion Shopping Centre (Kota Permai) Sdn. Bhd.", area:"Kota Permai", code:"BLKP", col1:"05", col2:"02" }, 
+       {name:"Billion Shopping Centre (Sungai Petani) Sdn. Bhd.", area:"Sungai Petani", code:"BLSP", col1:"05", col2:"03" }, 
+       {name:"Billion Shopping Centre (Butterworth) Sdn. Bhd.", area:"Butterworth", code:"BLBW", col1:"05", col2:"04" }, 
+       {name:"Pasaraya Billion (Alor Setar) Sdn. Bhd.", area:"Alor Setar", code:"BLAS", col1:"05", col2:"05" }, 
+       {name:"Billion Shopping Centre (Seberang Jaya) Sdn. Bhd.", area:"Seberang Jaya", code:"BLSJ", col1:"05", col2:"06" }, 
+       {name:"Billion Duty-Free (Langkawi) Sdn. Bhd.", area:"Langkawi", code:"BLLK", col1:"05", col2:"07" }, 
+       {name:"Billion Shopping Centre (Baling) Sdn. Bhd.", area:"Baling", code:"BLBL", col1:"05", col2:"08" } 
+        ];
+    const outlets_PR_Cons = [  
+       {name:"Billion Value Mart Duty Free (Pangkor) Sdn. Bhd.", area:"Pasir Bogak", code:"BCPB", col1:"04", col2:"08" } 
+        ];
+    const outlets_NT_Cons = [  
+       {name:"Billion Duty-Free (Langkawi) Sdn. Bhd.", area:"Kedawang", code:"BCBM", col1:"05", col2:"09" } 
+        ];
+    const outlets_HQ_Cons = [  
+       {name:"HQ Constore Server", area:"", code:"BCHQ", col1:"00", col2:"02" } 
+        ];        
+
+    //Combine Each Links
+    const WebRM_Links ={
+        BLPR:BLPR_WebRM, BJGR:BJGR_WebRM, BLHM:BLHM_WebRM, BLSM:BLSM_WebRM, BLSI:BLSI_WebRM, BMJP:BMJP_WebRM, BLCH:BLCH_WebRM, 
+        BLPB:BLPB_WebRM, BLKP:BLKP_WebRM, BLSP:BLSP_WebRM, BLBW:BLBW_WebRM, BLAS:BLAS_WebRM, BLSJ:BLSJ_WebRM, BLLK:BLLK_WebRM, BLBL:BLBL_WebRM, 
+        BLKB:BLKB_WebRM, BLKM:BLKM_WebRM, BLTM:BLTM_WebRM, BLRP:BLRP_WebRM, BLGN:BLGN_WebRM, BLHP:BLHP_WebRM, BLPM:BLPM_WebRM, BLTC:BLTC_WebRM, 
+        BLKK:BLKK_WebRM, BLJT:BLJT_WebRM, BLBS:BLBS_WebRM, BLPP:BLPP_WebRM, BLBC:BLBC_WebRM, PTPM:PTPM_WebRM, BLBG:BLBG_WebRM, BLTP:BLTP_WebRM, 
+        PTJW:PTJW_WebRM, PTMC:PTMC_WebRM, PKKP:PKKP_WebRM, 
+        BLPD:BLPD_WebRM, BLSG:BLSG_WebRM, BLBH:BLBH_WebRM, BLYY:BLYY_WebRM, 
+        BLBB:BLBB_WebRM, BSMY:BSMY_WebRM, BLPK:BLPK_WebRM, BLRB:BLRB_WebRM, BACC:BACC_WebRM, BCHQ:BCHQ_WebRM
+        };
+    const DailySales_Links ={
+        BLKB:BLKB_DailySales2026, BLKM:BLKM_DailySales2026, BLTM:BLTM_DailySales2026, BLRP:BLRP_DailySales2026, BLGN:BLGN_DailySales2026, 
+        BLHP:BLHP_DailySales2026, BLPM:BLPM_DailySales2026, BLTC:BLTC_DailySales2026, BLKK:BLKK_DailySales2026, BLJT:BLJT_DailySales2026, 
+        BLBS:BLBS_DailySales2026, BLPP:BLPP_DailySales2026, BLBC:BLBC_DailySales2026, PTPM:PTPM_DailySales2026, BLBG:BLBG_DailySales2026, 
+        BLTP:BLTP_DailySales2026, PTJW:PTJW_DailySales2026, PTMC:PTMC_DailySales2026, PKKP:PKKP_DailySales2026, 
+        BCKB:BCKB_DailySales2026, BCUM:BCUM_DailySales2026, BCAK:BCAK_DailySales2026, BCDB:BCDB_DailySales2026, BCBC:BCBC_DailySales2026, 
+        BCPM:BCPM_DailySales2026, BCPG:BCPG_DailySales2026, BCGN:BCGN_DailySales2026, BCSJ:BCSJ_DailySales2026, BCPC:BCPC_DailySales2026, 
+        PKTB:PKTB_DailySales2026
+    //  BCKT:BCKT_DailySales2026 
+        };
+    const MyKasih_Links ={
+        BLKB:BLKB_MyKasih2026, BLKM:BLKM_MyKasih2026, BLTM:BLTM_MyKasih2026, BLRP:BLRP_MyKasih2026, BLGN:BLGN_MyKasih2026, BLHP:BLHP_MyKasih2026, 
+        BLPM:BLPM_MyKasih2026, BLTC:BLTC_MyKasih2026, BLKK:BLKK_MyKasih2026, BLJT:BLJT_MyKasih2026, BLBS:BLBS_MyKasih2026, BLPP:BLPP_MyKasih2026, 
+        BLBC:BLBC_MyKasih2026, PTPM:PTPM_MyKasih2026, BLBG:BLBG_MyKasih2026, BLTP:BLTP_MyKasih2026, PTJW:PTJW_MyKasih2026, PTMC:PTMC_MyKasih2026, PKKP:PKKP_MyKasih2026, 
+        BCKB:BCKB_MyKasih2026, BCUM:BCUM_MyKasih2026, BCAK:BCAK_MyKasih2026, BCDB:BCDB_MyKasih2026, BCBC:BCBC_MyKasih2026, BCPM:BCPM_MyKasih2026, 
+        BCPG:BCPG_MyKasih2026, BCGN:BCGN_MyKasih2026, BCSJ:BCSJ_MyKasih2026, BCPC:BCPC_MyKasih2026, PKTB:PKTB_MyKasih2026, 
+    //  BCKT:BCKT_MyKasih2026, 
+        };
+    const CSV_Links ={
+        BLPR:BLPR_CSV, BJGR:BJGR_CSV, BLHM:BLHM_CSV, BLSM:BLSM_CSV, BLSI:BLSI_CSV, BMJP:BMJP_CSV, BLCH:BLCH_CSV, 
+        BLPB:BLPB_CSV, BLKP:BLKP_CSV, BLSP:BLSP_CSV, BLBW:BLBW_CSV, BLAS:BLAS_CSV, BLSJ:BLSJ_CSV, BLLK:BLLK_CSV, BLBL:BLBL_CSV, 
+        BLKB:BLKB_CSV, BLKM:BLKM_CSV, BLTM:BLTM_CSV, BLRP:BLRP_CSV, BLGN:BLGN_CSV, BLHP:BLHP_CSV, BLPM:BLPM_CSV, BLTC:BLTC_CSV, BLKK:BLKK_CSV, 
+        BLJT:BLJT_CSV, BLBS:BLBS_CSV, BLPP:BLPP_CSV, BLBC:BLBC_CSV, PTPM:PTPM_CSV, BLBG:BLBG_CSV, BLTP:BLTP_CSV, PTJW:PTJW_CSV, PTMC:PTMC_CSV, PKKP:PKKP_CSV, 
+        BLPD:BLPD_CSV, BLSG:BLSG_CSV, BLBH:BLBH_CSV, BLYY:BLYY_CSV, 
+        BLBB:BLBB_CSV, BSMY:BSMY_CSV, BLPK:BLPK_CSV, BLRB:BLRB_CSV,  BACC:BACC_CSV, BCHQ:BCHQ_CSV
+        };
+    const Packaging_Links ={
+        BLKB:BLKB_Packaging_Materia2026, BLKM:BLKM_Packaging_Materia2026, BLTM:BLTM_Packaging_Materia2026, BLRP:BLRP_Packaging_Materia2026, 
+        BLGN:BLGN_Packaging_Materia2026, BLHP:BLHP_Packaging_Materia2026, BLPM:BLPM_Packaging_Materia2026, BLTC:BLTC_Packaging_Materia2026, 
+        BLKK:BLKK_Packaging_Materia2026, BLJT:BLJT_Packaging_Materia2026, BLBS:BLBS_Packaging_Materia2026, BLPP:BLPP_Packaging_Materia2026, 
+        BLBC:BLBC_Packaging_Materia2026, PTPM:PTPM_Packaging_Materia2026, BLBG:BLBG_Packaging_Materia2026, BLTP:BLTP_Packaging_Materia2026, 
+        PTJW:PTJW_Packaging_Materia2026, PTMC:PTMC_Packaging_Materia2026, PKKP:PKKP_Packaging_Materia2026, 
+        BCKB:BCKB_Packaging_Materia2026, BCUM:BCUM_Packaging_Materia2026, BCAK:BCAK_Packaging_Materia2026, BCDB:BCDB_Packaging_Materia2026, 
+        BCBC:BCBC_Packaging_Materia2026, BCPM:BCPM_Packaging_Materia2026, BCPG:BCPG_Packaging_Materia2026, BCGN:BCGN_Packaging_Materia2026, 
+        BCSJ:BCSJ_Packaging_Materia2026, BCPC:BCPC_Packaging_Materia2026, PKTB:PKTB_Packaging_Materia2026 
+//      BCKT:BCKT_Packaging_Materia2026,
+        };
+    const PChecker_Links ={
+        BLKB:BLKB_PChecker, BLKM:BLKM_PChecker, BLTM:BLTM_PChecker, BLKK:BLKK_PChecker, PTJW:PTJW_PChecker, PTMC:PTMC_PChecker, PKKP:PKKP_PChecker 
+        };
+    const POS_Links ={
+        BLKM:BLKM_Pos, PTJW:PTJW_Pos, PTMC:PTMC_Pos, PKKP:PKKP_Pos, 
+        };
+    const SCO_Links ={
+        BLKM:BLKM_Sco, PTMC:PTMC_Sco, PKKP:PKKP_Sco,
+        };
+
+    //Outlet Email
+    const BPHQ_IT_EMail_Address  = ["it@billiongroup.com.my"];
+    const BPHQ_MIS_EMail_Address = ["mis@billiongroup.com.my"];
+    const Account_HQ_Email       = ["account@billiongroup.com.my"];
+
+    const Canfood_HQ_Email   = ["canfood@billiongroup.com.my"];
+    const Sundries_HQ_Email  = ["sundries@billiongroup.com.my"];
+    const Frozen_HQ_Email    = ["frozen@billiongroup.com.my"];
+    const Hardline_HQ_Email  = ["hardline@billiongroup.com.my"];
+    const Softline_HQ_Email  = ["softline@billiongroup.com.my"];
+
+    const Central_IT_Email   = ["it.central@billiongroup.com.my"];
+    const Southern_IT_Email  = ["it.southern@billiongroup.com.my"];
+    const Eastcoast_IT_Email = ["it.eastcoast@billiongroup.com.my"];
+    const Perak_IT_Email     = ["it.perak@billiongroup.com.my"];
+    const Northern_IT_Email  = ["it.northern@billiongroup.com.my"];
+
+	const BLBB_Email_Address = ["mis.bangi@billiongroup.com.my"];       BSMY_Email_Address = ["mis.semenyih@billiongroup.com.my"];     BLPK_Email_Address = ["mis.portklang@billiongroup.com.my"]; 
+    const BACC_Email_Address = ["mis.bacc@billiongroup.com.my"];        BLRB_Email_Address = ["mis.blrb@billiongroup.com.my"];
+
+	const BLPD_Email_Address = ["mis.portdickson@billiongroup.com.my"]; BLSG_Email_Address = ["mis.segamat@billiongroup.com.my"];      BLBH_Email_Address = ["mis.bahau@billiongroup.com.my"];
+	const BLYY_Email_Address = ["mis.yayasan@billiongroup.com.my"];
+
+	const BLKB_Email_Address = ["mis.pintupong@billiongroup.com.my"];   BLKM_Email_Address = ["mis.kotabharu@billiongroup.com.my"];    BLTM_Email_Address = ["mis.tanahmerah@billiongroup.com.my"];
+	const BLRP_Email_Address = ["mis.rantau@billiongroup.com.my"];      BLGN_Email_Address = ["mis.gunongtimor@billiongroup.com.my"];  BLHP_Email_Address = ["mis.hyperpc@billiongroup.com.my"];
+	const BLPM_Email_Address = ["mis.pasirmas@billiongroup.com.my"];    BLTC_Email_Address = ["mis.tanjungchat@billiongroup.com.my"];  BLKK_Email_Address = ["mis.kualakrai@billiongroup.com.my"];
+	const BLJT_Email_Address = ["mis.jerteh@billiongroup.com.my"];      BLBS_Email_Address = ["mis.kualabesut@billiongroup.com.my"];   BLPP_Email_Address = ["mis.pasirputeh@billiongroup.com.my"];
+    const BLBC_Email_Address = ["mis.bachok@billiongroup.com.my"];      PTPM_Email_Address = ["mis.lubokjong@billiongroup.com.my"];    BLBG_Email_Address = ["mis.bukitbunga@billiongroup.com.my"];
+    const BLTP_Email_Address = ["mis.tumpat@billiongroup.com.my"];      PTJW_Email_Address = ["mis.jelawat@billiongroup.com.my"];      PTMC_Email_Address = ["mis.ptmc@billiongroup.com.my"];
+    const PKKP_Email_Address = ["mis.pkkp@billiongroup.com.my"];
+    
+    const BCKB_Email_Address = ["bckb@billiongroup.com.my"];            BCUM_Email_Address = ["bcum@billiongroup.com.my"];             BCAK_Email_Address = ["bcak@billiongroup.com.my"];
+    const BCDB_Email_Address = ["bcdb@billiongroup.com.my"];            BCBC_Email_Address = ["bcbc@billiongroup.com.my"];             BCPM_Email_Address = ["bcpm@billiongroup.com.my"];
+    const BCPG_Email_Address = ["bcpg@billiongroup.com.my"];            BCGN_Email_Address = ["bcgn@billiongroup.com.my"];             BCSJ_Email_Address = ["bcsj@billiongroup.com.my"];
+    const BCPC_Email_Address = ["bcpc@billiongroup.com.my"];            PKTB_Email_Address = ["pktb@billiongroup.com.my"];             BCKT_Email_Address = ["bckt@billiongroup.com.my"];
+
+	const BLPR_Email_Address = ["mis.pantairemis@billiongroup.com.my"]; BJGR_Email_Address = ["mis.gunungrapat@billiongroup.com.my"];  BLHM_Email_Address = ["mis.hutanmelintang@billiongroup.com.my"];
+	const BLSM_Email_Address = ["mis.lumut@billiongroup.com.my"];       BLSI_Email_Address = ["mis.seriiskandar@billiongroup.com.my"]; BMJP_Email_Address = ["mis.jelapangmart@billiongroup.com.my"];
+	const BLCH_Email_Address = ["mis.cameron@billiongroup.com.my"];     BCPB_Email_Address = ["bcpb@billiongroup.com.my"];
+
+	const BLPB_Email_Address = ["mis.paritbuntar@billiongroup.com.my"]; BLKP_Email_Address = ["mis.kotapermai@billiongroup.com.my"];   BLSP_Email_Address = ["mis.sungaipetani@billiongroup.com.my"];
+	const BLBW_Email_Address = ["mis.butterworth@billiongroup.com.my"]; BLAS_Email_Address = ["mis.alorsetar@billiongroup.com.my"];    BLSJ_Email_Address = ["mis.seberangjaya@billiongroup.com.my"];
+	const BLLK_Email_Address = ["mis.langkawi@billiongroup.com.my"];    BLBL_Email_Address = ["mis.baling@billiongroup.com.my"];       BCBM_Email_Address = ["bcbm@billiongroup.com.my"];
+
+	//Outlet Acc Email
+	const BLBB_Acc_Email = ["acc.bangi@billiongroup.com.my"]; BSMY_Acc_Email = ["acc.semenyih@billiongroup.com.my"]; BLPK_Acc_Email = ["acc.portklang@billiongroup.com.my"];
+	const BACC_Acc_Email = ["acc.bacc@billiongroup.com.my"];  BLRB_Acc_Email = ["acc.blrb@billiongroup.com.my"];
+
+	const BLPD_Acc_Email = ["acc.portdickson@billiongroup.com.my"]; BLSG_Acc_Email = ["acc.segamat@billiongroup.com.my"]; BLBH_Acc_Email = ["acc.bahau@billiongroup.com.my"];
+	const BLYY_Acc_Email = ["acc.yayasan@billiongroup.com.my"];
+
+    const BLKB_Acc_Email = ["acc.pintupong@billiongroup.com.my"]; BLKM_Acc_Email = ["acc.kotabharu@billiongroup.com.my"];   BLTM_Acc_Email = ["acc.tanahmerah@billiongroup.com.my"];
+    const BLRP_Acc_Email = ["acc.rantau@billiongroup.com.my"];    BLGN_Acc_Email = ["acc.gunongtimor@billiongroup.com.my"]; BLHP_Acc_Email = ["acc.hyperpc@billiongroup.com.my"];
+    const BLPM_Acc_Email = ["acc.pasirmas@billiongroup.com.my"];  BLTC_Acc_Email = ["acc.tanjungchat@billiongroup.com.my"]; BLKK_Acc_Email = ["acc.kualakrai@billiongroup.com.my"];
+    const BLJT_Acc_Email = ["acc.jerteh@billiongroup.com.my"];    BLBS_Acc_Email = ["acc.kualabesut@billiongroup.com.my"];  BLPP_Acc_Email = ["acc.pasirputeh@billiongroup.com.my"];
+    const BLBC_Acc_Email = ["acc.bachok@billiongroup.com.my"];    PTPM_Acc_Email = ["acc.lubokjong@billiongroup.com.my"];   BLBG_Acc_Email = ["acc.bukitbunga@billiongroup.com.my"];
+    const BLTP_Acc_Email = ["acc.tumpat@billiongroup.com.my"];    PTJW_Acc_Email = ["acc.jelawat@billiongroup.com.my"];     PTMC_Acc_Email = ["acc.ptmc@billiongroup.com.my"];
+    const PKKP_Acc_Email = ["acc.pkkp@billiongroup.com.my"];
+    
+    const BCKB_Acc_Email = ["acc.bckb@billiongroup.com.my"]; BCUM_Acc_Email = ["acc.bcum@billiongroup.com.my"]; BCAK_Acc_Email = ["acc.bcak@billiongroup.com.my"];
+    const BCDB_Acc_Email = ["acc.bcdb@billiongroup.com.my"]; BCBC_Acc_Email = ["acc.bcbc@billiongroup.com.my"]; BCPM_Acc_Email = ["acc.bcpm@billiongroup.com.my"];
+    const BCPG_Acc_Email = ["acc.bcpg@billiongroup.com.my"]; BCGN_Acc_Email = ["acc.bcgn@billiongroup.com.my"]; BCSJ_Acc_Email = ["acc.bcsj@billiongroup.com.my"];
+    const BCPC_Acc_Email = ["acc.bcpc@billiongroup.com.my"]; PKTB_Acc_Email = ["acc.pktb@billiongroup.com.my"]; BCKT_Acc_Email = ["acc.bckt@billiongroup.com.my"];
+
+	const BLPR_Acc_Email = ["acc.pantairemis@billiongroup.com.my"]; BJGR_Acc_Email = ["acc.gunungrapat@billiongroup.com.my"];  BLHM_Acc_Email = ["acc.hutanmelintang@billiongroup.com.my"];
+	const BLSM_Acc_Email = ["acc.lumut@billiongroup.com.my"];       BLSI_Acc_Email = ["acc.seriiskandar@billiongroup.com.my"]; BMJP_Acc_Email = ["acc.jelapangmart@billiongroup.com.my"];
+	const BLCH_Acc_Email = ["acc.cameron@billiongroup.com.my"];     BCPB_Acc_Email = ["acc.bcpb@billiongroup.com.my"];
+
+	const BLPB_Acc_Email = ["acc.paritbuntar@billiongroup.com.my"]; BLKP_Acc_Email = ["acc.kotapermai@billiongroup.com.my"]; BLSP_Acc_Email = ["acc.sungaipetani@billiongroup.com.my"];
+	const BLBW_Acc_Email = ["acc.butterworth@billiongroup.com.my"]; BLAS_Acc_Email = ["acc.alorsetar@billiongroup.com.my"];  BLSJ_Acc_Email = ["acc.seberangjaya@billiongroup.com.my"];
+	const BLLK_Acc_Email = ["acc.langkawi@billiongroup.com.my"];    BLBL_Acc_Email = ["acc.baling@billiongroup.com.my"];     BCBM_Acc_Email = ["acc.bcbm@billiongroup.com.my"];
+
+	//Outlet Pic Email
+    const BLBB_Pic_Email = [""]; BSMY_Pic_Email = [""]; BLPK_Pic_Email = [""]; 
+    const BACC_Pic_Email = [""]; BLRB_Pic_Email = [""];
+
+	const BLPD_Pic_Email = [""]; BLSG_Pic_Email = [""]; BLBH_Pic_Email = [""];
+	const BLYY_Pic_Email = [""];
+
+    const BLPR_Pic_Email = [""]; BJGR_Pic_Email = [""]; BLHM_Pic_Email = [""];
+	const BLSM_Pic_Email = [""]; BLSI_Pic_Email = [""]; BMJP_Pic_Email = [""];
+	const BLCH_Pic_Email = [""]; BCPB_Pic_Email = [""];
+
+	const BLPB_Pic_Email = [""]; BLKP_Pic_Email = [""]; BLSP_Pic_Email = [""];
+	const BLBW_Pic_Email = [""]; BLAS_Pic_Email = [""]; BLSJ_Pic_Email = [""];
+	const BLLK_Pic_Email = [""]; BLBL_Pic_Email = [""]; BCBM_Pic_Email = [""];
+
+	const BLKB_Pic_Email = ["lkchin@billiongroup.com.my","hbtan@billiongroup.com.my"];  BLKM_Pic_Email = ["yctan@billiongroup.com.my",""];
+    const BLTM_Pic_Email = ["gjho@billiongroup.com.my","yzteoh@billiongroup.com.my"];   BLRP_Pic_Email = ["klbong@billiongroup.com.my",""];
+    const BLGN_Pic_Email = ["",""];                                                     BLHP_Pic_Email = ["kyyee@billiongroup.com.my","hctay@billiongroup.com.my"];
+    const BLPM_Pic_Email = ["",""];                                                     BLTC_Pic_Email = ["vincentfoo@billiongroup.com.my",""];
+    const BLKK_Pic_Email = ["cggoh@billiongroup.com.my","hbtan@billiongroup.com.my"];   BLJT_Pic_Email = ["sclee@billiongroup.com.my",""];
+    const BLBS_Pic_Email = ["sltan@billiongroup.com.my",""];                            BLPP_Pic_Email = ["kptee@billiongroup.com.my",""];
+    const BLBC_Pic_Email = ["ckyeap@billiongroup.com.my",""];                           PTPM_Pic_Email = ["gjho@billiongroup.com.my",""];
+    const BLBG_Pic_Email = ["klbong@billiongroup.com.my",""];                           BLTP_Pic_Email = ["yctan@billiongroup.com.my",""];
+    const PTJW_Pic_Email = ["leekk@billiongroup.com.my",""];                            PTMC_Pic_Email = ["sylee@billiongroup.com.my",""];
+    const PKKP_Pic_Email = ["cggoh@billiongroup.com.my",""];
+
+	const ConsEC_Pic_Email = ["sptan@billiongroup.com.my","alvinchua@billiongroup.com.my","ben.tan@billiongroup.com.my"];
+
+	//Acc Head Email
+	const BLBB_Acc_Head_Email = [""]; BSMY_Acc_Head_Email = [""];
+	const BLPK_Acc_Head_Email = [""]; BACC_Acc_Head_Email = [""];
+	const BLRB_Acc_Head_Email = [""];
+
+	const BLPD_Acc_Head_Email = [""]; BLSG_Acc_Head_Email = [""];
+	const BLBH_Acc_Head_Email = [""]; BLYY_Acc_Head_Email = [""];
+	
+	const BLPR_Acc_Head_Email = [""]; BJGR_Acc_Head_Email = [""];
+	const BLHM_Acc_Head_Email = [""]; BLSM_Acc_Head_Email = [""];
+	const BLSI_Acc_Head_Email = [""]; BMJP_Acc_Head_Email = [""];
+	const BLCH_Acc_Head_Email = [""]; BCPB_Acc_Head_Email = [""];
+	
+	const BLPB_Acc_Head_Email = [""]; BLKP_Acc_Head_Email = [""];
+	const BLSP_Acc_Head_Email = [""]; BLBW_Acc_Head_Email = [""];
+	const BLAS_Acc_Head_Email = [""]; BLSJ_Acc_Head_Email = [""];
+	const BLLK_Acc_Head_Email = [""]; BLBL_Acc_Head_Email = [""];
+	const BCBM_Acc_Head_Email = [""]; 
+
+    //Region Acc Head Email
+	const Acc_Head_1_EC_Email = ["slchua@billiongroup.com.my"];  Acc_Head_2_EC_Email = ["clpoon@billiongroup.com.my"];
+	const Acc_Head_3_EC_Email = ["wschang@billiongroup.com.my"]; Acc_Head_4_EC_Email = ["iilee@billiongroup.com.my"];
+	
+    //Outlet Account Head
+	const BLKB_Acc_Head_Email = Acc_Head_1_EC_Email;
+	const BLKM_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const BLTM_Acc_Head_Email = Acc_Head_3_EC_Email;
+	const BLRP_Acc_Head_Email = Acc_Head_1_EC_Email;
+	const BLGN_Acc_Head_Email = Acc_Head_1_EC_Email;
+	const BLHP_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BLPM_Acc_Head_Email = Acc_Head_3_EC_Email;
+	const BLTC_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const BLKK_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const BLJT_Acc_Head_Email = Acc_Head_1_EC_Email;
+	const BLBS_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const BLPP_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const BLBC_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const PTPM_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BLBG_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const BLTP_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const PTJW_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const PTMC_Acc_Head_Email = [...Acc_Head_2_EC_Email,...Acc_Head_3_EC_Email];
+	const PKKP_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCKB_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCUM_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCAK_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCDB_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCBC_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCPM_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCPG_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCGN_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCSJ_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCPC_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const PKTB_Acc_Head_Email = Acc_Head_4_EC_Email;
+	const BCKT_Acc_Head_Email = Acc_Head_4_EC_Email;	
+
+	//Region Boss Email
+	const Boss_CT_Email = ["",""];
+	const Boss_ST_Email = ["",""];
+	const Boss_EC_Email = ["susieyeoh@billiongroup.com.my","leongte@billiongroup.com.my"];
+	const Boss_PR_Email = ["",""];
+	const Boss_NT_Email = ["",""];
+
+	//Region MIS Email
+	const Central_Mis_Email = ["mis.central@billiongroup.com.my"];
+	const Southernl_Mis_Email = ["mis.southern@billiongroup.com.my"];
+	const Eastcoast_Mis_Email = ["mis.eastcoast@billiongroup.com.my"];
+	const Perak_Mis_Email = ["mis.perak@billiongroup.com.my"];
+	const Northern_Mis_Email = ["mis.northern@billiongroup.com.my"];
+
+    //Central & Southern Regin MIS PIC Head
+    const Awyong_Email = ["hcawyong@billiongroup.com.my"]; Leeks_Email = ["leeks@billiongroup.com.my"];
+    //East Coast Regin MIS PIC Head
+	const Ccw_Email = ["chiachuewoei@billiongroup.com.my"]; Sslim_Email = ["sslim@billiongroup.com.my"];
+	const Ivy_Email = ["ivy.wee@billiongroup.com.my"];      Sy_Email = ["sy.naqiuddin@billiongroup.com.my"];
+    //Perak Regin MIS PIC Head
+    const Lstan_Email = ["lstan@billiongroup.com.my"];
+    //Northern Regin MIS PIC Head
+    const Sansan_Email = ["ssooi@billiongroup.com.my"];
+    
+    //Combine Regin MIS PIC Head
+    const CT_Region_MIS_PIC_Email = [...Awyong_Email,...Leeks_Email];
+    const ST_Region_MIS_PIC_Email = [...Awyong_Email,...Leeks_Email];
+	const EC_Region_MIS_PIC_Email = [...Sslim_Email,...Ccw_Email,...Ivy_Email,...Sy_Email];
+    const PR_Region_MIS_PIC_Email = [...Lstan_Email];
+    const NT_Region_MIS_PIC_Email = [...Sansan_Email];
+
+    const All_Region_MIS_PIC_Email = [...CT_Region_MIS_PIC_Email,...ST_Region_MIS_PIC_Email,...EC_Region_MIS_PIC_Email,...PR_Region_MIS_PIC_Email,...NT_Region_MIS_PIC_Email];
+
+    //Outlet Email Data
+	// 区域配置：决定 boss 和 region 邮箱
+    const REGION_CONFIG = {
+        CT:{boss: Boss_CT_Email, region: Central_Mis_Email },
+        EC:{boss: Boss_EC_Email, region: Eastcoast_Mis_Email },
+        ST:{boss: Boss_ST_Email, region: Southernl_Mis_Email },
+        PR:{boss: Boss_PR_Email, region: Perak_Mis_Email },
+        NT:{boss: Boss_NT_Email, region: Northern_Mis_Email },
+        };
+
+    // 公司列表：[代码, 区域, 自定义pic?]  (pic 默认为 `${code}_Pic_Email`)
+    const COMPANY_LIST = [
+        // CT 区域
+        ['BLRB', 'CT'], ['BLBB', 'CT'], ['BSMY', 'CT'], ['BLPK', 'CT'], ['BACC', 'CT'],
+        // EC 区域 (普通门店)
+        ['BLKB', 'EC'], ['BLKM', 'EC'], ['BLTM', 'EC'], ['BLRP', 'EC'], ['BLGN', 'EC'],
+        ['BLHP', 'EC'], ['BLPM', 'EC'], ['BLTC', 'EC'], ['BLKK', 'EC'], ['BLJT', 'EC'],
+        ['BLBS', 'EC'], ['BLPP', 'EC'], ['BLBC', 'EC'], ['PTPM', 'EC'], ['BLBG', 'EC'],
+        ['BLTP', 'EC'], ['PTJW', 'EC'], ['PTMC', 'EC'], ['PKKP', 'EC'],
+        // ST 区域
+        ['BLPD', 'ST'], ['BLSG', 'ST'], ['BLBH', 'ST'], ['BLYY', 'ST'],
+        // PR 区域
+        ['BLPR', 'PR'], ['BJGR', 'PR'], ['BLHM', 'PR'], ['BLSM', 'PR'], ['BLSI', 'PR'],
+        ['BMJP', 'PR'], ['BLCH', 'PR'], ['BCPB', 'PR'],  // BCPB 在 PR 区域，pic 使用默认 (BCPB_Pic_Email)
+        // NT 区域
+        ['BLPB', 'NT'], ['BLKP', 'NT'], ['BLSP', 'NT'], ['BLBW', 'NT'], ['BLAS', 'NT'],
+        ['BLSJ', 'NT'], ['BLLK', 'NT'], ['BLBL', 'NT'], ['BCBM', 'NT'],
+
+        //['BCHQ', 'HQ'],
+        // EC 区域的 constore (使用统一 pic: ConsEC_Pic_Email)
+        ['BCKB', 'EC', 'ConsEC_Pic_Email'], ['BCUM', 'EC', 'ConsEC_Pic_Email'],
+        ['BCAK', 'EC', 'ConsEC_Pic_Email'], ['BCDB', 'EC', 'ConsEC_Pic_Email'],
+        ['BCBC', 'EC', 'ConsEC_Pic_Email'], ['BCPM', 'EC', 'ConsEC_Pic_Email'],
+        ['BCPG', 'EC', 'ConsEC_Pic_Email'], ['BCGN', 'EC', 'ConsEC_Pic_Email'],
+        ['BCSJ', 'EC', 'ConsEC_Pic_Email'], ['BCPC', 'EC', 'ConsEC_Pic_Email'],
+        ['PKTB', 'EC', 'ConsEC_Pic_Email'],
+        // ['BCKT', 'EC', 'ConsEC_Pic_Email'], // 被注释的 BCKT 暂时保留
+
+        ];
+
+    // 辅助函数：根据公司代码生成标准字段名
+    const stdName = (code, suffix) => `${code}_${suffix}`;
+    const getStdVar = (code, suffix) => eval(stdName(code, suffix)); // 假设变量在全局或作用域内存在
+
+    // 生成单个公司条目
+    const createCompanyEntry = ([code, region, customPic]) => {
+        const{boss, region: regionEmail } = REGION_CONFIG[region];
+        const pic = customPic || stdName(code, 'Pic_Email');
+        return {
+            main    : getStdVar(code, 'Email_Address'),
+            acc     : getStdVar(code, 'Acc_Email'),
+            accHead : getStdVar(code, 'Acc_Head_Email'),
+            pic     : eval(pic), // 如果是变量名则取值，自定义 pic 可能是变量或直接字符串？这里假设是变量名
+            boss,
+            region  : regionEmail,
+        };
+        };
+
+    // 构建 Company_Email_Data
+    const Company_Email_Data = Object.fromEntries(
+        COMPANY_LIST.map(codeInfo => [codeInfo[0], createCompanyEntry(codeInfo)])
+        );
+
+    // 添加聚合的 Outlet 和 Constore
+    // 辅助：获取多个公司的 main 邮箱数组
+    const getMains = (codes) => codes.map(code => Company_Email_Data[code].main);
+
+    Company_Email_Data.CT_Outlet = {
+        main: getMains(['BLBB', 'BSMY', 'BLPK', 'BLRB', 'BACC']),
+        };
+    
+    Company_Email_Data.ST_Outlet = {
+        main: getMains(['BLPD', 'BLSG', 'BLBH', 'BLYY']),
+        };
+    
+    Company_Email_Data.EC_Outlet = {
+        main: getMains([
+            'BLKB', 'BLKM', 'BLTM', 'BLRP', 'BLGN', 'BLHP', 'BLPM', 'BLTC',
+            'BLKK', 'BLJT', 'BLBS', 'BLPP', 'BLBC', 'PTPM', 'BLBG', 'BLTP',
+            'PTJW', 'PTMC', 'PKKP'
+        ]),
+        abcc: EC_Region_MIS_PIC_Email,
+        };
+    
+    Company_Email_Data.PR_Outlet = {
+        main: getMains(['BLPR', 'BJGR', 'BLHM', 'BLSM', 'BLSI', 'BMJP', 'BLCH']),
+        };
+    
+    Company_Email_Data.NT_Outlet = {
+        main: getMains(['BLPB', 'BLKP', 'BLSP', 'BLBW', 'BLAS', 'BLSJ', 'BLLK', 'BLBL']),
+        };
+    
+    Company_Email_Data.EC_Cons = {
+        main: getMains([
+            'BCKB', 'BCUM', 'BCAK', 'BCDB', 'BCBC', 'BCPM', 'BCPG',
+            'BCGN', 'BCSJ', 'BCPC', 'PKTB'  // 'BCKT' 被注释则不加
+        ]),
+        abcc: EC_Region_MIS_PIC_Email,
+        };
+    
+    Company_Email_Data.PR_Cons = {
+        main: getMains(['BCPB']),
+        };
+    
+    Company_Email_Data.NT_Cons = {
+        main: getMains(['BCBM']),
+        };
+    
+    //--------------------------
+	const Dash =[" - "];
+
+	//Email Subject sent to PIC, Acc, Outlet
+	const GroupA = ["Monthly Closing Report", "Monthly Inventory Report","Perishable Sales, GP, Disposal & Variance Stock","Sales & GP By Line","Monthly Oversea Inventory Report","Stock Count"];
+    const GroupB = [""];
+
+	//Reset Selected Email Subject
+	const select = document.getElementById("MainSub");
+
+	select.addEventListener("change", function () {
+								// clear previous timer if user changes again
+								if (select.resetTimer) {
+									clearTimeout(select.resetTimer);
+								}
+
+								// set 20 minutes timer (20 × 60 × 1000 ms)
+								select.resetTimer = setTimeout(() => {
+									select.selectedIndex = 0; // back to first option
+								}, 10 * 60 * 1000);
+							});
+
+	//Reset Region Email Subject
+	const inputs = document.querySelectorAll('[id^="NewSub"]');
+
+	inputs.forEach(input => {
+							input.addEventListener("input", function () {
+																			// clear previous timer
+																			if (input.resetTimer) {
+																				clearTimeout(input.resetTimer);
+																			}
+																			// set 10 minutes timer
+																			input.resetTimer = setTimeout(() => {
+																				input.value = "";
+																			}, 10 * 60 * 1000);
+																		});
+							});
+	
+	// Show Time
+	function updateTime() 	{
+								let now = new Date();
+
+								let time = now.toLocaleTimeString(); // 3:45:12 PM
+								document.getElementById("TimeNow").innerHTML = time;
+							}
+
+    //Send Email Outlet
+	function Send_Email(CwgCode, inputId) {
+		let MailSub = document.getElementById("MainSub").value;
+		let ManualSub = document.getElementById(inputId).value;
+
+		const data = Company_Email_Data[CwgCode];
+
+		if (!data) {
+			alert("Invalid Company Code: " + CwgCode);
+			return;
+		}
+
+		// ✅ resolve subject
+		if (!MailSub && !ManualSub) {
+			alert("No Subject");
+			return;
+		}
+		MailSub = MailSub || ManualSub;
+
+		let subject;
+		let allEmails = [];
+
+		if (GroupA.includes(MailSub)){
+			allEmails = [ 
+            ...(data.main || []),
+            ...(data.acc || []),
+            ...(data.accHead || []),
+            ...(data.pic || []),
+            ...(data.boss || [])
+			];
+        
+
+			subject = CwgCode + " # " + MailSub + Dash + year + lastmonth;
+
+			window.open(
+				"mailto:" + allEmails.join(",") +
+				"?cc=" + (data.region || []).join(",") +
+				"&subject=" + encodeURIComponent(subject)
+			);
+
+		} else {
+			allEmails = [ ...data.main ];
+
+			if (MailSub === "MyKasih Daily Summary") {
+				subject = CwgCode + " # " + MailSub + Dash + year + currentmonth + yesterday;
+			} else if (MailSub === "MyKasih Monthly Summary") {
+				subject = CwgCode + " # " + MailSub + Dash + year + lastmonth;
+			} else if (MailSub === "Non Moving") {
+				subject = CwgCode + " # " + MailSub + Dash + year + lastmonth;
+			}
+
+			window.open(
+				"mailto:" + allEmails.join(",") +
+				"?subject=" + encodeURIComponent(subject)
+			);
+		}
+	}
+
+	//Send Email Region All Outlet
+	function Send_Email_Region(Region_Email) {
+		let MailSub = document.getElementById("MainSub").value;
+
+		// ✅ collect manual inputs (priority order)
+		let ManualSub = "";
+
+		let NewSub_CT = document.getElementById("NewSub_CT")?.value || "";
+		let NewSub_ST = document.getElementById("NewSub_ST")?.value || "";
+		let NewSub_EC = document.getElementById("NewSub_EC")?.value || "";
+		let NewSub_EC_Cons = document.getElementById("NewSub_EC_Cons")?.value || "";
+		let NewSub_PR = document.getElementById("NewSub_PR")?.value || "";
+		let NewSub_PR_Cons = document.getElementById("NewSub_PR_Cons")?.value || "";
+		let NewSub_NT = document.getElementById("NewSub_NT")?.value || "";
+		let NewSub_NT_Cons = document.getElementById("NewSub_NT_Cons")?.value || "";
+        
+		if (NewSub_CT !== "" && Region_Email ==="CT_Outlet") {
+			ManualSub = NewSub_CT;
+		} else if (NewSub_ST !== "" && Region_Email ==="ST_Outlet") {
+			ManualSub = NewSub_ST;
+		} else if (NewSub_EC !== "" && Region_Email ==="EC_Outlet") {
+			ManualSub = NewSub_EC;
+		} else if (NewSub_EC_Cons !== "" && Region_Email ==="EC_Cons") {
+			ManualSub = NewSub_EC_Cons;
+		} else if (NewSub_PR !== "" && Region_Email ==="PR_Outlet") {
+			ManualSub = NewSub_PR;
+		} else if (NewSub_PR_Cons !== "" && Region_Email ==="PR_Cons") {
+			ManualSub = NewSub_PR_Cons;
+		} else if (NewSub_NT !== "" && Region_Email ==="NT_Outlet") {
+			ManualSub = NewSub_NT;
+		} else if (NewSub_NT_Cons !== "" && Region_Email ==="NT_Cons") {
+			ManualSub = NewSub_NT_Cons;
+		} 
+
+		// ✅ resolve subject
+		if (!MailSub && !ManualSub) {
+			alert("No Subject");
+			return;
+		}
+		MailSub = MailSub || ManualSub;
+
+		let useBCC = ["EC_Outlet", "EC_Cons"].includes(Region_Email) &&
+             confirm("Include BCC to Region MIS recipients?");
+
+		// ✅ map region code (clean way)
+		const RegionMap = {
+			CT_Outlet: "Central",
+			ST_Outlet: "Southern",
+			EC_Outlet: "EastCoast",
+			EC_Cons  : "EC Constore",
+			PR_Outlet: "Perak",
+			PR_Cons  : "Perak Constore",
+			NT_Outlet: "Northern",
+			NT_Cons  : "Northern Constore",
+            };
+
+		const Region_Code = RegionMap[Region_Email];
+
+		if (!Region_Code) {
+			alert("Invalid Region: " + Region_Email);
+			return;
+		}
+
+		// ✅ get emails dynamically (you must define this structure)
+		const data = Company_Email_Data[Region_Email];
+
+		if (!data) {
+			alert("No email data for: " + Region_Email);
+			return;
+		}
+
+		let allEmails = [ ...(data.main || []) ];
+
+		// ✅ subject builder
+		let subject;
+		if (MailSub === "MyKasih Daily Summary") {
+			subject = Region_Code + " # " + MailSub + Dash + year + currentmonth + yesterday;
+		} else if (MailSub === "MyKasih Monthly Summary") {
+			subject = Region_Code + " # " + MailSub + Dash + year + lastmonth;
+		} else if (MailSub === "Non Moving") {
+				subject = CwgCode + " # " + MailSub + Dash + year + lastmonth;
+			}
+
+		let bccPart = (useBCC && data.abcc?.length)
+			? "&bcc=" + data.abcc.join(",")
+			: "";
+
+		window.open(
+			"mailto:" + allEmails.join(",") +
+			"?cc=" + (data.region || []).join(",") +
+			bccPart +
+			"&subject=" + encodeURIComponent(subject)
+		);
+	}
+
+    
+    // 占位生成辅助函数
+    function buildButtonOrPlaceholder(cardClass, hasLink, onClickCode, displayText, tooltipText) {
+        if (hasLink) {
+            return `<div class="${cardClass}" onclick="${onClickCode}"><div class="tooltip">${displayText}<span class="tooltiptext">${tooltipText}</span></div></div>`;
+        } else {
+            // 无链接：不生成任何内容（返回空字符串），该单元格将完全消失
+            return '';
+        }
+    }
+
+    function hasValidLR(key, map){return map && typeof map[key] === 'function' && map[key].toString().indexOf('window.open("")') === -1 && map[key].toString().length > 20; }
+    // 重新定义渲染函数（部分示例，完整实现见代码中）
+    // ========== EastCoast 普通门店 ==========
+    // 存储的 key
+    const STORAGE_KEY_EC = "EC_Checkboxes";
+
+    // 获取存储的所有复选框状态（结构：{outletCode:{daily: bool, mykasih: bool } }）
+    function getStoredCheckboxStates() {
+        const stored = localStorage.getItem(STORAGE_KEY_EC);
+        return stored ? JSON.parse(stored) : {};
+    }
+
+    // 保存某个 outlet 的某个复选框状态
+    function saveCheckboxState(outletCode, type, isChecked) {
+        const states = getStoredCheckboxStates();
+        if (!states[outletCode]) states[outletCode] ={daily: false, mykasih: false, einv:false };
+        states[outletCode][type] = isChecked;
+        localStorage.setItem(STORAGE_KEY_EC, JSON.stringify(states));
+    }
+
+    // 重置所有复选框
+    // 重置所有复选框
+    function resetAllCheckboxes_EC() {
+        // 询问用户确认
+        if (confirm("Are you sure want to reset all check box？")) {
+            localStorage.removeItem(STORAGE_KEY_EC);
+            // 取消页面上所有 EC 区域的复选框
+            document.querySelectorAll("#regionContainer_EC .ec-checkbox").forEach(cb => {
+                cb.checked = false;
+            });
+
+            // 重新存入空对象（可选）
+            localStorage.setItem(STORAGE_KEY_EC, JSON.stringify({}));
+        }
+    }
+
+    // 重置所有复选框
+    function resetAllCheckboxes_EC_Cons() {
+        // 询问用户确认
+        if (confirm("Are you sure want to reset all check box？")) {
+            localStorage.removeItem(STORAGE_KEY_EC);
+            // 取消页面上所有 EC 区域的复选框
+            document.querySelectorAll("#regionContainer_EC_Cons .ec-checkbox").forEach(cb => {
+                cb.checked = false;
+            });
+
+            // 重新存入空对象（可选）
+            localStorage.setItem(STORAGE_KEY_EC, JSON.stringify({}));
+        }
+    }
+
+    // 修改后的渲染函数
+    function renderoutlets_HQ_Cons() {
+        const container = document.getElementById("regionContainer_HQ_Cons");
+        if (!container) return;
+
+        const storedStates = getStoredCheckboxStates();
+
+        container.innerHTML = outlets_HQ_Cons.map(o => {
+            const hasWebRM    = !!WebRM_Links[o.code];
+            const hasCSV      = !!CSV_Links[o.code];
+            const hasPack     = !!Packaging_Links[o.code];
+
+            return `
+                <div class="grid_HQ-row grid_HQ">
+                    
+                    <div class="tooltip card_HQ1" style="text-align:left" onclick="toggleRow(this)" data-area="${o.name}" data-tooltip="Click">${o.name}</div>
+                    <div class="tooltip card_HQ1" onclick="toggleRow(this)" data-area="${o.code}" data-tooltip="Click">${o.code}<span class="tooltiptext">Click</span></div>
+
+                    <div class="card_HQ1" style="text-align:center;">${o.col1}</div>
+                    <div class="card_HQ1" style="text-align:center;">${o.col2}</div>
+                    
+                    ${buildButtonOrPlaceholder('card_HQ', hasWebRM, `WebRM('${o.code}')`, 'WebRM', o.code)}
+                    ${buildButtonOrPlaceholder('card_HQ', hasCSV, `CSV('${o.code}')`, 'CSV Tools', o.code)}
+                    ${buildButtonOrPlaceholder('card_HQ', hasPack, `Packaging('${o.code}')`, 'Packaging Materia', o.code)}
+
+                </div>
+            `;
+        }).join("");
+    }
+
+    function renderOutlets_EC() {
+        const container = document.getElementById("regionContainer_EC");
+        if (!container) return;
+
+        const storedStates = getStoredCheckboxStates();
+
+        container.innerHTML = outlets_EC.map(o => {
+            const hasWebRM    = !!WebRM_Links[o.code];
+            const hasDaily    = !!DailySales_Links[o.code];
+            const hasMyKasih  = !!MyKasih_Links[o.code];
+            const hasCSV      = !!CSV_Links[o.code];
+            const hasPack     = !!Packaging_Links[o.code];
+            const hasPChecker = !!PChecker_Links[o.code];
+            const hasPOS      = !!POS_Links[o.code];
+            const hasSCO      = !!SCO_Links[o.code];
+            const hasEmail    = !!(Company_Email_Data && Company_Email_Data[o.code]);
+
+            // 获取该 outlet 的复选框状态
+            const dailyChecked   = storedStates[o.code]?.daily === true;
+            const mykasihChecked = storedStates[o.code]?.mykasih === true;
+            const einvChecked = storedStates[o.code]?.einv === true;
+
+            return `
+                <div class="grid_Regoin-row grid_Regoin_EC">
+                    
+                    <div class="tooltip card_EC1" style="text-align:left" onclick="toggleRow(this)" data-area="${o.name}" data-tooltip="Click">${o.name}</div>
+                    <div class="tooltip card_EC1" onclick="toggleRow(this)" data-area="${o.area}" data-tooltip="Click">${o.area}</div>
+                    <div class="tooltip card_EC1" onclick="toggleRow(this)" data-area="${o.code}" data-tooltip="Click">${o.code}<span class="tooltiptext">Click</span></div>
+
+                    <div class="card_EC1" style="text-align:center;">${o.col1}</div>
+                    <div class="card_EC1" style="text-align:center;">${o.col2}</div>
+                    
+                    ${buildButtonOrPlaceholder('card_EC', hasWebRM, `WebRM('${o.code}')`, 'WebRM', o.code)}
+
+                    <!-- Daily Sales 按钮列 -->
+                    ${buildButtonOrPlaceholder('card_EC', hasDaily, `DailySales('${o.code}')`, 'Daily Sales', o.code)}
+                    <!-- Daily Sales 后面的复选框 -->
+                    <div class="tooltip" style="text-align:center; align-content: center;">
+                        <input type="checkbox"
+                            class="ec-checkbox"
+                            data-code="${o.code}"
+                            data-type="daily"
+                            ${dailyChecked ? 'checked' : ''}
+                            onchange="saveCheckboxState('${o.code}', 'daily', this.checked)"><div class="tooltiptext">${o.code} Daily Sales</div>
+                    </div>
+                    
+                    <!-- MyKasih 按钮列 -->
+                    ${buildButtonOrPlaceholder('card_EC', hasMyKasih, `MyKasih('${o.code}')`, 'MyKasih', o.code)}
+                    <!-- MyKasih 后面的复选框 -->
+                    <div class="tooltip" style="text-align:center; align-content: center;">
+                        <input type="checkbox"
+                            class="ec-checkbox"
+                            data-code="${o.code}"
+                            data-type="mykasih"
+                            ${mykasihChecked ? 'checked' : ''}
+                            onchange="saveCheckboxState('${o.code}', 'mykasih', this.checked)"><div class="tooltiptext">${o.code} MyKasih</div>
+                    </div>
+                    
+                    ${buildButtonOrPlaceholder('card_EC', hasCSV, `CSV('${o.code}')`, 'CSV Tools', o.code)}
+                    ${buildButtonOrPlaceholder('card_EC', hasPack, `Packaging('${o.code}')`, 'Packaging Materia', o.code)}
+                    ${buildButtonOrPlaceholder('card_EC hidden row-hide', hasPChecker, `PChecker('${o.code}')`, 'Price Checker Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_EC hidden row-hide', hasPOS, `POS('${o.code}')`, 'POS Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_EC hidden row-hide', hasSCO, `SCO('${o.code}')`, 'SCO Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_EC', hasEmail, `Send_Email('${o.code}','NewSub_EC')`, 'Email', o.code)}
+                    <div class="card_EC1 hidden row-hide tooltip" style="text-align:center;">E-inv
+                        <input type="checkbox"
+                            class="ec-checkbox"
+                            data-code="${o.code}"
+                            data-type="einv"
+                            ${einvChecked ? 'checked' : ''}
+                            onchange="saveCheckboxState('${o.code}', 'einv', this.checked)"><div class="tooltiptext">${o.code} E-inv</div>
+                    </div>
+                </div>
+            `;
+        }).join("");
+    }
+
+    // 将辅助函数暴露到全局，供 onchange 调用
+    window.saveCheckboxState = saveCheckboxState;
+    window.resetAllCheckboxes_EC = resetAllCheckboxes_EC;
+    window.resetAllCheckboxes_EC_Cons = resetAllCheckboxes_EC_Cons;
+
+    // 页面加载完成后渲染
+    document.addEventListener("DOMContentLoaded", () => {
+        renderOutlets_EC();
+    });
+
+    function resetDailyCheckboxes() {
+        const states = getStoredCheckboxStates();
+        for (let code in states) {
+            if (states[code].daily) states[code].daily = false;
+        }
+        localStorage.setItem(STORAGE_KEY_EC, JSON.stringify(states));
+        renderOutlets_EC(); // 重新渲染
+    }
+
+        // ========== EastCoast Constore（迷你超市） ==========
+        function renderOutlets_EC_Cons() {
+            const container = document.getElementById("regionContainer_EC_Cons");
+            if (!container) return;
+
+                const storedStates = getStoredCheckboxStates();
+
+
+            container.innerHTML = outlets_EC_Cons.map(o => {
+                const hasWebRM    = !!WebRM_Links[o.code];
+                const hasDaily    = !!DailySales_Links[o.code];
+                const hasMyKasih  = !!MyKasih_Links[o.code];
+                const hasCSV      = !!CSV_Links[o.code];
+                const hasPack     = !!Packaging_Links[o.code];
+                const hasPChecker = !!PChecker_Links[o.code];
+                const hasPOS      = !!POS_Links[o.code];
+                const hasSCO      = !!SCO_Links[o.code];
+                const hasEmail    = !!(Company_Email_Data && Company_Email_Data[o.code]);
+
+                // 获取该 outlet 的复选框状态
+                const dailyChecked   = storedStates[o.code]?.daily === true;
+                const mykasihChecked = storedStates[o.code]?.mykasih === true;
+                const einvChecked = storedStates[o.code]?.einv === true;
+
+
+                return `
+                    <div class="grid_Regoin-row grid_Regoin_EC_Cons">
+
+                    <div class="tooltip card_EC1" style="text-align:left" onclick="toggleRow(this)" data-area="${o.name}" data-tooltip="Click">${o.name}</div>
+                    <div class="tooltip card_EC1" onclick="toggleRow(this)" data-area="${o.area}" data-tooltip="Click">${o.area}</div>
+                    <div class="tooltip card_EC1" onclick="toggleRow(this)" data-area="${o.code}" data-tooltip="Click">${o.code}<span class="tooltiptext">Click</span></div>
+
+                        <div class="card_EC1" style="text-align:center;">${o.col1}</div>
+                        <div class="card_EC1" style="text-align:center;">${o.col2}</div>
+
+                        ${buildButtonOrPlaceholder('card_EC', hasWebRM, `WebRM('${o.code}')`, 'WebRM', o.code)}
+                        ${buildButtonOrPlaceholder('card_EC', hasDaily, `DailySales('${o.code}')`, 'Daily Sales', o.code)}
+                        <!-- Daily Sales 后面的复选框 -->
+                        <div class="tooltip" style="text-align:center; align-content: center;">
+                            <input type="checkbox"
+                                class="ec-checkbox"
+                                data-code="${o.code}"
+                                data-type="daily"
+                                ${dailyChecked ? 'checked' : ''}
+                                onchange="saveCheckboxState('${o.code}', 'daily', this.checked)"><div class="tooltiptext">${o.code} Daily Sales</div>
+                        </div>
+                        
+                        <!-- MyKasih 按钮列 -->
+                        ${buildButtonOrPlaceholder('card_EC', hasMyKasih, `MyKasih('${o.code}')`, 'MyKasih', o.code)}
+                        <!-- MyKasih 后面的复选框 -->
+                        <div class="tooltip" style="text-align:center; align-content: center;">
+                            <input type="checkbox"
+                                class="ec-checkbox"
+                                data-code="${o.code}"
+                                data-type="mykasih"
+                                ${mykasihChecked ? 'checked' : ''}
+                                onchange="saveCheckboxState('${o.code}', 'mykasih', this.checked)"><div class="tooltiptext">${o.code} MyKasih</div>
+                        </div>
+                        ${buildButtonOrPlaceholder('card_EC', hasCSV, `CSV('${o.code}')`, 'CSV Tools', o.code)}
+                        ${buildButtonOrPlaceholder('card_EC', hasPack, `Packaging('${o.code}')`, 'Packaging Materia', o.code)}
+                        ${buildButtonOrPlaceholder('card_EC hidden row-hide', hasPChecker, `PChecker('${o.code}')`, 'Price Checker Img', o.code)}
+                        ${buildButtonOrPlaceholder('card_EC hidden row-hide', hasPOS, `POS('${o.code}')`, 'POS Img', o.code)}
+                        ${buildButtonOrPlaceholder('card_EC hidden row-hide', hasSCO, `SCO('${o.code}')`, 'SCO Img', o.code)}
+                        ${buildButtonOrPlaceholder('card_EC', hasEmail, `Send_Email('${o.code}','NewSub_EC_Cons')`, 'Email', o.code)}
+                        <div class="card_EC1 hidden row-hide tooltip" style="text-align:center;">E-inv
+                            <input type="checkbox"
+                                class="ec-checkbox"
+                                data-code="${o.code}"
+                                data-type="einv"
+                                ${einvChecked ? 'checked' : ''}
+                                onchange="saveCheckboxState('${o.code}', 'einv', this.checked)"><div class="tooltiptext">${o.code} E-inv</div>
+                        </div>                        
+                    </div>
+                `;
+            }).join("");
+        }
+
+    // ========== Central Region ==========
+    function renderOutlets_CT() {
+        const container = document.getElementById("regionContainer_CT");
+        if (!container) return;
+        container.innerHTML = outlets_CT.map(o => {
+            const hasWebRM    = !!WebRM_Links[o.code];
+            const hasDaily    = !!DailySales_Links[o.code];
+            const hasMyKasih  = !!MyKasih_Links[o.code];
+            const hasCSV      = !!CSV_Links[o.code];
+            const hasPack     = !!Packaging_Links[o.code];
+            const hasPChecker = !!PChecker_Links[o.code];
+            const hasPOS      = !!POS_Links[o.code];
+            const hasSCO      = !!SCO_Links[o.code];
+            const hasEmail    = !!(Company_Email_Data && Company_Email_Data[o.code]);
+            return `
+                <div class="grid_Regoin-row grid_Regoin">
+                    <div class="tooltip card_CT1" style="text-align:left" onclick="toggleRow(this)" data-area="${o.name}" data-tooltip="Click">${o.name}</div>
+                    <div class="tooltip card_CT1" onclick="toggleRow(this)" data-area="${o.area}" data-tooltip="Click">${o.area}</div>
+                    <div class="tooltip card_CT1" onclick="toggleRow(this)" data-area="${o.code}" data-tooltip="Click">${o.code}<span class="tooltiptext">Click</span></div>
+                    <div class="card_CT1" style="text-align:center;">${o.col1}</div>
+                    <div class="card_CT1" style="text-align:center;">${o.col2}</div>
+                    ${buildButtonOrPlaceholder('card_CT', hasWebRM, `WebRM('${o.code}')`, 'WebRM', o.code)}
+                    ${buildButtonOrPlaceholder('card_CT', hasDaily, `DailySales('${o.code}')`, 'Daily Sales', o.code)}
+                    ${buildButtonOrPlaceholder('card_CT', hasMyKasih, `MyKasih('${o.code}')`, 'MyKasih', o.code)}
+                    ${buildButtonOrPlaceholder('card_CT', hasCSV, `CSV('${o.code}')`, 'CSV Tools', o.code)}
+                    ${buildButtonOrPlaceholder('card_CT', hasPack, `Packaging('${o.code}')`, 'Packaging Materia', o.code)}
+                    ${buildButtonOrPlaceholder('card_CT hidden row-hide', hasPChecker, `PChecker('${o.code}')`, 'Price Checker Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_CT hidden row-hide', hasPOS, `POS('${o.code}')`, 'POS Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_CT hidden row-hide', hasSCO, `SCO('${o.code}')`, 'SCO Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_CT', hasEmail, `Send_Email('${o.code}','NewSub_CT')`, 'Email', o.code)}
+                </div>
+            `;
+        }).join("");
+    }
+
+    // ========== Southern Region ==========
+    function renderOutlets_ST() {
+        const container = document.getElementById("regionContainer_ST");
+        if (!container) return;
+        container.innerHTML = outlets_ST.map(o => {
+            const hasWebRM    = !!WebRM_Links[o.code];
+            const hasDaily    = !!DailySales_Links[o.code];
+            const hasMyKasih  = !!MyKasih_Links[o.code];
+            const hasCSV      = !!CSV_Links[o.code];
+            const hasPack     = !!Packaging_Links[o.code];
+            const hasPChecker = !!PChecker_Links[o.code];
+            const hasPOS      = !!POS_Links[o.code];
+            const hasSCO      = !!SCO_Links[o.code];
+            const hasEmail    = !!(Company_Email_Data && Company_Email_Data[o.code]);
+            return `
+                <div class="grid_Regoin-row grid_Regoin">
+                    <div class="tooltip card_ST1" style="text-align:left" onclick="toggleRow(this)" data-area="${o.name}" data-tooltip="Click">${o.name}</div>
+                    <div class="tooltip card_ST1" onclick="toggleRow(this)" data-area="${o.area}" data-tooltip="Click">${o.area}</div>
+                    <div class="tooltip card_ST1" onclick="toggleRow(this)" data-area="${o.code}" data-tooltip="Click">${o.code}<span class="tooltiptext">Click</span></div>
+                    <div class="card_ST1" style="text-align:center;">${o.col1}</div>
+                    <div class="card_ST1" style="text-align:center;">${o.col2}</div>
+                    ${buildButtonOrPlaceholder('card_ST', hasWebRM, `WebRM('${o.code}')`, 'WebRM', o.code)}
+                    ${buildButtonOrPlaceholder('card_ST', hasDaily, `DailySales('${o.code}')`, 'Daily Sales', o.code)}
+                    ${buildButtonOrPlaceholder('card_ST', hasMyKasih, `MyKasih('${o.code}')`, 'MyKasih', o.code)}
+                    ${buildButtonOrPlaceholder('card_ST', hasCSV, `CSV('${o.code}')`, 'CSV Tools', o.code)}
+                    ${buildButtonOrPlaceholder('card_ST', hasPack, `Packaging('${o.code}')`, 'Packaging Materia', o.code)}
+                    ${buildButtonOrPlaceholder('card_ST hidden row-hide', hasPChecker, `PChecker('${o.code}')`, 'Price Checker Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_ST hidden row-hide', hasPOS, `POS('${o.code}')`, 'POS Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_ST hidden row-hide', hasSCO, `SCO('${o.code}')`, 'SCO Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_ST', hasEmail, `Send_Email('${o.code}','NewSub_ST')`, 'Email', o.code)}
+                </div>
+            `;
+        }).join("");
+    }
+
+    // ========== Perak Region ==========
+    function renderOutlets_PR() {
+        const container = document.getElementById("regionContainer_PR");
+        if (!container) return;
+        container.innerHTML = outlets_PR.map(o => {
+            const hasWebRM    = !!WebRM_Links[o.code];
+            const hasDaily    = !!DailySales_Links[o.code];
+            const hasMyKasih  = !!MyKasih_Links[o.code];
+            const hasCSV      = !!CSV_Links[o.code];
+            const hasPack     = !!Packaging_Links[o.code];
+            const hasPChecker = !!PChecker_Links[o.code];
+            const hasPOS      = !!POS_Links[o.code];
+            const hasSCO      = !!SCO_Links[o.code];
+            const hasEmail    = !!(Company_Email_Data && Company_Email_Data[o.code]);
+            return `
+                <div class="grid_Regoin-row grid_Regoin">
+                    <div class="tooltip card_PR1" style="text-align:left" onclick="toggleRow(this)" data-area="${o.name}" data-tooltip="Click">${o.name}</div>
+                    <div class="tooltip card_PR1" onclick="toggleRow(this)" data-area="${o.area}" data-tooltip="Click">${o.area}</div>
+                    <div class="tooltip card_PR1" onclick="toggleRow(this)" data-area="${o.code}" data-tooltip="Click">${o.code}<span class="tooltiptext">Click</span></div>
+                    <div class="card_PR1" style="text-align:center;">${o.col1}</div>
+                    <div class="card_PR1" style="text-align:center;">${o.col2}</div>
+                    ${buildButtonOrPlaceholder('card_PR', hasWebRM, `WebRM('${o.code}')`, 'WebRM', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasDaily, `DailySales('${o.code}')`, 'Daily Sales', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasMyKasih, `MyKasih('${o.code}')`, 'MyKasih', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasCSV, `CSV('${o.code}')`, 'CSV Tools', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasPack, `Packaging('${o.code}')`, 'Packaging Materia', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR hidden row-hide', hasPChecker, `PChecker('${o.code}')`, 'Price Checker Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR hidden row-hide', hasPOS, `POS('${o.code}')`, 'POS Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR hidden row-hide', hasSCO, `SCO('${o.code}')`, 'SCO Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasEmail, `Send_Email('${o.code}','NewSub_PR')`, 'Email', o.code)}
+                </div>
+            `;
+        }).join("");
+    }
+
+    // ========== Northern Region ==========
+    function renderOutlets_NT() {
+        const container = document.getElementById("regionContainer_NT");
+        if (!container) return;
+        container.innerHTML = outlets_NT.map(o => {
+            const hasWebRM    = !!WebRM_Links[o.code];
+            const hasDaily    = !!DailySales_Links[o.code];
+            const hasMyKasih  = !!MyKasih_Links[o.code];
+            const hasCSV      = !!CSV_Links[o.code];
+            const hasPack     = !!Packaging_Links[o.code];
+            const hasPChecker = !!PChecker_Links[o.code];
+            const hasPOS      = !!POS_Links[o.code];
+            const hasSCO      = !!SCO_Links[o.code];
+            const hasEmail    = !!(Company_Email_Data && Company_Email_Data[o.code]);
+            return `
+                <div class="grid_Regoin-row grid_Regoin">
+                    <div class="tooltip card_NT1" style="text-align:left" onclick="toggleRow(this)" data-area="${o.name}" data-tooltip="Click">${o.name}</div>
+                    <div class="tooltip card_NT1" onclick="toggleRow(this)" data-area="${o.area}" data-tooltip="Click">${o.area}</div>
+                    <div class="tooltip card_NT1" onclick="toggleRow(this)" data-area="${o.code}" data-tooltip="Click">${o.code}<span class="tooltiptext">Click</span></div>
+                    <div class="card_NT1" style="text-align:center;">${o.col1}</div>
+                    <div class="card_NT1" style="text-align:center;">${o.col2}</div>
+                    ${buildButtonOrPlaceholder('card_NT', hasWebRM, `WebRM('${o.code}')`, 'WebRM', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasDaily, `DailySales('${o.code}')`, 'Daily Sales', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasMyKasih, `MyKasih('${o.code}')`, 'MyKasih', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasCSV, `CSV('${o.code}')`, 'CSV Tools', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasPack, `Packaging('${o.code}')`, 'Packaging Materia', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT hidden row-hide', hasPChecker, `PChecker('${o.code}')`, 'Price Checker Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT hidden row-hide', hasPOS, `POS('${o.code}')`, 'POS Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT hidden row-hide', hasSCO, `SCO('${o.code}')`, 'SCO Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasEmail, `Send_Email('${o.code}','NewSub_NT')`, 'Email', o.code)}
+                </div>
+            `;
+        }).join("");
+    }
+
+    // ========== Perak Constore ==========
+    function renderOutlets_PR_Cons() {
+        const container = document.getElementById("regionContainer_PR_Cons");
+        if (!container) return;
+        container.innerHTML = outlets_PR_Cons.map(o => {
+            const hasWebRM    = !!WebRM_Links[o.code];
+            const hasDaily    = !!DailySales_Links[o.code];
+            const hasMyKasih  = !!MyKasih_Links[o.code];
+            const hasCSV      = !!CSV_Links[o.code];
+            const hasPack     = !!Packaging_Links[o.code];
+            const hasPChecker = !!PChecker_Links[o.code];
+            const hasPOS      = !!POS_Links[o.code];
+            const hasSCO      = !!SCO_Links[o.code];
+            const hasEmail    = !!(Company_Email_Data && Company_Email_Data[o.code]);
+            return `
+                <div class="grid_Regoin-row grid_Regoin_Cons">
+                    <div class="tooltip card_PR1" style="text-align:left" onclick="toggleRow(this)" data-area="${o.name}" data-tooltip="Click">${o.name}</div>
+                    <div class="tooltip card_PR1" onclick="toggleRow(this)" data-area="${o.area}" data-tooltip="Click">${o.area}</div>
+                    <div class="tooltip card_PR1" onclick="toggleRow(this)" data-area="${o.code}" data-tooltip="Click">${o.code}<span class="tooltiptext">Click</span></div>
+                    <div class="card_PR1" style="text-align:center;">${o.col1}</div>
+                    <div class="card_PR1" style="text-align:center;">${o.col2}</div>
+                    ${buildButtonOrPlaceholder('card_PR', hasWebRM, `WebRM('${o.code}')`, 'WebRM', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasDaily, `DailySales('${o.code}')`, 'Daily Sales', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasMyKasih, `MyKasih('${o.code}')`, 'MyKasih', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasCSV, `CSV('${o.code}')`, 'CSV Tools', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasPack, `Packaging('${o.code}')`, 'Packaging Materia', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR hidden row-hide', hasPChecker, `PChecker('${o.code}')`, 'Price Checker Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR hidden row-hide', hasPOS, `POS('${o.code}')`, 'POS Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR hidden row-hide', hasSCO, `SCO('${o.code}')`, 'SCO Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_PR', hasEmail, `Send_Email('${o.code}','NewSub_PR_Cons')`, 'Email', o.code)}
+                </div>
+            `;
+        }).join("");
+    }
+
+    // ========== Northern Constore ==========
+    function renderOutlets_NT_Cons() {
+        const container = document.getElementById("regionContainer_NT_Cons");
+        if (!container) return;
+        container.innerHTML = outlets_NT_Cons.map(o => {
+            const hasWebRM    = !!WebRM_Links[o.code];
+            const hasDaily    = !!DailySales_Links[o.code];
+            const hasMyKasih  = !!MyKasih_Links[o.code];
+            const hasCSV      = !!CSV_Links[o.code];
+            const hasPack     = !!Packaging_Links[o.code];
+            const hasPChecker = !!PChecker_Links[o.code];
+            const hasPOS      = !!POS_Links[o.code];
+            const hasSCO      = !!SCO_Links[o.code];
+            const hasEmail    = !!(Company_Email_Data && Company_Email_Data[o.code]);
+            return `
+                <div class="grid_Regoin-row grid_Regoin_Cons">
+                    <div class="tooltip card_NT1" style="text-align:left" onclick="toggleRow(this)" data-area="${o.name}" data-tooltip="Click">${o.name}</div>
+                    <div class="tooltip card_NT1" onclick="toggleRow(this)" data-area="${o.area}" data-tooltip="Click">${o.area}</div>
+                    <div class="tooltip card_NT1" onclick="toggleRow(this)" data-area="${o.code}" data-tooltip="Click">${o.code}<span class="tooltiptext">Click</span></div>
+                    <div class="card_NT1" style="text-align:center;">${o.col1}</div>
+                    <div class="card_NT1" style="text-align:center;">${o.col2}</div>
+                    ${buildButtonOrPlaceholder('card_NT', hasWebRM, `WebRM('${o.code}')`, 'WebRM', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasDaily, `DailySales('${o.code}')`, 'Daily Sales', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasMyKasih, `MyKasih('${o.code}')`, 'MyKasih', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasCSV, `CSV('${o.code}')`, 'CSV Tools', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasPack, `Packaging('${o.code}')`, 'Packaging Materia', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT hidden row-hide', hasPChecker, `PChecker('${o.code}')`, 'Price Checker Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT hidden row-hide', hasPOS, `POS('${o.code}')`, 'POS Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT hidden row-hide', hasSCO, `SCO('${o.code}')`, 'SCO Img', o.code)}
+                    ${buildButtonOrPlaceholder('card_NT', hasEmail, `Send_Email('${o.code}','NewSub_NT_Cons')`, 'Email', o.code)}
+                </div>
+            `;
+        }).join("");
+    }
+
+    // 处理无效按钮：
+    document.addEventListener("DOMContentLoaded", function() {
+        let btieWebRM = document.getElementById("btieWebRM"); if(btieWebRM){btieWebRM.classList.add("invisible-placeholder"); btieWebRM.onclick = null; }
+        let btieCSV = document.getElementById("btieCSV"); if(btieCSV){btieCSV.classList.add("invisible-placeholder"); btieCSV.onclick = null; }
+        let compHard = document.querySelector("#generalButtonsGrid .card_Out_S[onclick*='ComputerHardware2026']"); if(compHard) compHard.classList.add("invisible-placeholder");
+        
+        // 调用渲染函数
+        renderoutlets_HQ_Cons(); renderOutlets_EC(); renderOutlets_EC_Cons(); renderOutlets_CT(); renderOutlets_ST(); renderOutlets_PR(); renderOutlets_NT(); renderOutlets_PR_Cons(); renderOutlets_NT_Cons();
+    });
+
+    function toggleRow(element) {
+        const row = element.closest('.grid_Regoin-row');
+        if (!row) return;
+        const hiddenElements = row.querySelectorAll('.row-hide');
+        hiddenElements.forEach(el => {
+            el.classList.toggle('hidden');
+        });
+    }
+
+    // WebRM 函数（可能已有，若无则添加）
+    function WebRM(code) {
+        const target = WebRM_Links[code];
+        if (!target) {
+            alert("No WebRM link for " + code);
+            return;
+        }
+        if (typeof target === "string") window.open(target, "_blank");
+        else if (typeof target === "function") target();
+    }
+
+    // Daily Sales 函数
+    function DailySales(code) {
+        const target = DailySales_Links[code];
+        if (!target) {
+            alert("No Daily Sales link for " + code);
+            return;
+        }
+        if (typeof target === "string") window.open(target, "_blank");
+        else if (typeof target === "function") target();
+    }
+
+    // MyKasih 函数
+    function MyKasih(code) {
+        const target = MyKasih_Links[code];
+        if (!target) {
+            alert("No MyKasih link for " + code);
+            return;
+        }
+        if (typeof target === "string") window.open(target, "_blank");
+        else if (typeof target === "function") target();
+    }
+
+    // CSV Tools 函数
+    function CSV(code) {
+        const target = CSV_Links[code];
+        if (!target) {
+            alert("No CSV Tools link for " + code);
+            return;
+        }
+        if (typeof target === "string") window.open(target, "_blank");
+        else if (typeof target === "function") target();
+    }
+
+    // Packaging 函数
+    function Packaging(code) {
+        const target = Packaging_Links[code];
+        if (!target) {
+            alert("No Packaging Materia link for " + code);
+            return;
+        }
+        if (typeof target === "string") window.open(target, "_blank");
+        else if (typeof target === "function") target();
+    }
+
+    // Price Checker 函数
+    function PChecker(code) {
+        const target = PChecker_Links[code];
+        if (!target) {
+            alert("No PriceChecker link for " + code);
+            return;
+        }
+        if (typeof target === "string") window.open(target, "_blank");
+        else if (typeof target === "function") target();
+    }
+
+    // POS Image 函数
+    function POS(code) {
+        const target = POS_Links[code];
+        if (!target) {
+            alert("No POS Image link for " + code);
+            return;
+        }
+        if (typeof target === "string") window.open(target, "_blank");
+        else if (typeof target === "function") target();
+    }
+
+    // SCO Image 函数
+    function SCO(code) {
+        const target = SCO_Links[code];
+        if (!target) {
+            alert("No SCO Image link for " + code);
+            return;
+        }
+        if (typeof target === "string") window.open(target, "_blank");
+        else if (typeof target === "function") target();
+    }
+
+    //Get Web File Name
+    let path = window.location.pathname;
+    let fileName = path.substring(path.lastIndexOf('/') + 1) || "index.html";
+    // 转为小写比较，避免大小写问题
+    let isIndex = fileName.toLowerCase() === "index.html";
+    let x = isIndex ? 180 : 2;
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const el = document.getElementById("countdown");
+        if (!el) {
+            console.error("countdown element not found");
+            return;
+        }
+
+        let path = window.location.pathname;
+        let fileName = path.substring(path.lastIndexOf('/') + 1) || "index.html" || "index-ver6.html";
+        let isIndex = fileName.toLowerCase() === "index.html" || "index-ver6.html";
+        let x = isIndex ? 120 : 2;
+        let time = x * 60;
+
+        function update() {
+            let hours = Math.floor(time / 3600);
+            let minutes = Math.floor((time % 3600) / 60);
+            let seconds = time % 60;
+            el.innerHTML = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+
+        update();
+
+        const timer = setInterval(() => {
+            time--;
+            update();
+            if (time < 0) {
+                clearInterval(timer);
+                el.innerHTML = "00:00:00";
+                location.reload();
+            }
+        }, 1000);
+    });
+
+    (function() {
+        // Get all Department checkbox elements
+        const canfood = document.getElementById('chkCanfood');
+        const sundries = document.getElementById('chkSundries');
+        const frozen = document.getElementById('chkFrozen');
+        const softline = document.getElementById('chkSoftline');
+        const hardline = document.getElementById('chkHardline');
+        
+        // Array of all Department checkboxes for easy iteration
+        const allDepartmentBoxes = [canfood, sundries, frozen, softline, hardline].filter(cb => cb !== null);
+        
+        // Function to uncheck every checkbox except the one that should remain checked (or none)
+        function uncheckAllExcept(exceptCheckbox) {
+            for (let cb of allDepartmentBoxes) {
+                if (cb !== exceptCheckbox) {
+                    cb.checked = false;
+                }
+            }
+        }
+        
+        // Function to enforce mutual exclusivity: when any checkbox is checked,
+        // we ensure all others become unchecked.
+        // This handler will be attached to each checkbox's 'change' event.
+        function setupExclusiveHandler(checkbox) {
+            if (!checkbox) return;
+            checkbox.addEventListener('change', function(e) {
+                // If this checkbox becomes CHECKED, uncheck all the others
+                if (checkbox.checked) {
+                    uncheckAllExcept(checkbox);
+                }
+                // If it becomes unchecked (i.e., user unchecks the only selected one),
+                // we do nothing else — all can be unchecked, which is fine.
+                // No need to auto-check another box.
+            });
+        }
+        
+        // Apply exclusive handler to every Department checkbox
+        allDepartmentBoxes.forEach(cb => setupExclusiveHandler(cb));
+        
+        // Additionally, we want to support clicking on the parent .card_HQ1 div
+        // to toggle its checkbox. This respects the original design and ensures
+        // that when the div is clicked (outside the checkbox itself), we still
+        // trigger the change event and thus the exclusivity logic.
+        // Without this, clicking on the padded area would not toggle the checkbox.
+        const DepartmentDivs = document.querySelectorAll('.card_HQ1');
+        DepartmentDivs.forEach(div => {
+            const innerCheckbox = div.querySelector('input[type="checkbox"]');
+            if (innerCheckbox) {
+                div.addEventListener('click', (event) => {
+                    // If the click target is not the checkbox itself (to avoid double-toggle)
+                    if (event.target !== innerCheckbox) {
+                        // Toggle the checkbox state
+                        innerCheckbox.checked = !innerCheckbox.checked;
+                        // Manually trigger 'change' event so our exclusive handler runs
+                        const changeEvent = new Event('change',{bubbles: true });
+                        innerCheckbox.dispatchEvent(changeEvent);
+                    }
+                });
+            }
+        });
+        
+        // Ensure initial state is consistent: if somehow more than one is checked at load (rare)
+        // we keep only the first checked one (or none). For safety, pick the first checked.
+        function sanitizeInitialState() {
+            const checkedBoxes = allDepartmentBoxes.filter(cb => cb.checked);
+            if (checkedBoxes.length > 1) {
+                // Keep only the first checked one, uncheck the rest
+                const firstChecked = checkedBoxes[0];
+                for (let i = 1; i < checkedBoxes.length; i++) {
+                    checkedBoxes[i].checked = false;
+                }
+                // Also ensure that firstChecked remains checked (already true)
+                // but we must also make sure no other remains checked, we just did.
+                // However, we might need to uncheck all except firstChecked via utility
+                uncheckAllExcept(firstChecked);
+            }
+        }
+        sanitizeInitialState();
+        
+        // ========== EMAIL FUNCTIONALITY (original requirement) ==========
+        // Expose global function for the inline onclick handler.
+        window.Send_Email_New_Supp = function(inputId) {
+        const inputElement = document.getElementById(inputId);
+        if (!inputElement) {
+            alert("Error: Supplier input field missing.");
+            return;
+        }
+        const supplierName = inputElement.value.trim();
+        if (supplierName === "") {
+            alert("Please enter a supplier full name before emailing.");
+            return;
+        }
+        
+        // Find the selected Department
+        let selectedDepartment = null;
+        for (let cb of allDepartmentBoxes) {
+            if (cb.checked) {
+                selectedDepartment = cb.value;
+                break;
+            }
+        }
+        
+        if (!selectedDepartment) {
+            alert("Please select a Department before emailing.");
+            return;
+        }
+        
+        // Email address configuration (change domain if needed)
+        const mainAccount = Account_HQ_Email;
+        const ccAddress = BPHQ_MIS_EMail_Address ;
+        
+        // Map categories to their specific email addresses
+        const DepartmentEmails = {
+            "Canfood" : Canfood_HQ_Email,
+            "Sundries": Sundries_HQ_Email,
+            "Frozen"  : Frozen_HQ_Email,
+            "Softline": Softline_HQ_Email,
+            "Hardline": Hardline_HQ_Email
+        };
+        
+        const DepartmentEmail = DepartmentEmails[selectedDepartment];
+        if (!DepartmentEmail) {
+            alert("Unknown Department: " + selectedDepartment);
+            return;
+        }
+        
+        // Build TO recipients: main account + Department email
+        const toRecipients = `${DepartmentEmail}`;
+        const toRecipientsCC = `${mainAccount},${ccAddress}`;
+        
+        // Subject and body
+        const subject = `MIS # Supplier's New Account Form - ${supplierName}`;
+        const body = `Supplier Name : ${supplierName}\nSupplier Code : \nDepartment : ${selectedDepartment}\n`;
+        
+        // Construct mailto URL with CC
+        const mailtoLink = `mailto:${toRecipients}?cc=${toRecipientsCC}&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+            // Open default email client
+            window.location.href = mailtoLink;
+            
+            // Clear the input field after sending email
+            inputElement.value = "";
+            
+            // Optional: also uncheck Department? Usually keep as is, but feel free to add:
+            for (let cb of allDepartmentBoxes) cb.checked = false;
+        };
+        
+        // Additional console log to confirm script is active
+        console.log("✅ Exclusive mode active: Only one Department checkbox can be checked at a time (radio-like behavior).");
+    })();
+
+        // 时间与邮件功能保持不变
+        const today = new Date(),
+            day = String(today.getDate()).padStart(2, '0'),
+            yesterday = String(today.getDate()-1).padStart(2, '0'),
+            year = today.getFullYear(),
+            currentmonth = String(today.getMonth() + 1).padStart(2, '0'),   // 01–12
+            lastmonth = String(today.getMonth()).padStart(2, '0');      // 00–11
+        document.getElementById("TodayDate").innerText = `${day}-${currentmonth}-${year}`;
+
+        function updateTime(){
+            let now = new Date(); document.getElementById("TimeNow").innerHTML = now.toLocaleTimeString(); 
+            }
+
+        setInterval(updateTime, 1000); updateTime();
+
+        // 其余邮件定义、Company_Email_Data、Send_Email等保持原样（略）
+        document.addEventListener("DOMContentLoaded", function() {
+
+        // 获取当天日期（您代码中已有 day 变量，可直接复用）
+        const today = new Date();
+        const day = today.getDate();   // 1~31
+
+        const processElem = document.getElementById("processText");
+        if (processElem) {
+            if (day > 27) {
+                processElem.style.display = "block";   // 或 "inline-block", "flex" 等原样式
+            } else {
+                processElem.style.display = "none";
+            }
+        }
+    });
+
+</script>
+</body>
+</html>
